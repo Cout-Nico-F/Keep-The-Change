@@ -5,19 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float startSpeed = 5f;
-    float horizontalInput;
-    float verticalInput;
-
-        void Start()
-    {
-        
-    }
+    [SerializeField] Animator animator;
+    Vector2 movement;
+    //float horizontalInput; Convertí estos dos a una variable vector2 para poder acceder al magnitude
+    //float verticalInput;
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
+
+        AnimationSetter();
     }
 
     private void FixedUpdate()
@@ -27,7 +26,14 @@ public class PlayerController : MonoBehaviour
     void PlayerMovement()
     {
         
-        transform.Translate(Vector3.right * Time.deltaTime * startSpeed * horizontalInput);
-        transform.Translate(Vector3.up * Time.deltaTime * startSpeed * verticalInput);
+        transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
+        transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
+    }
+
+private void AnimationSetter ()
+    {
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);//little performance trick (sqrmagnitude instead of magnitude)
     }
 }
