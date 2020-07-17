@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 0e68c2c7a0ec2a44c938e2f9aa100796
+guid: 3dff98c368b99bd46bd0c9c6dd7579a3
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2571275980999761923
-    second: PF-WALK2_0
-  - first:
-      213: 4976141014756109461
-    second: PF-WALK2_1
-  - first:
-      213: 1799710969364088189
-    second: PF-WALK2_2
-  - first:
-      213: 9123866977807136368
-    second: PF-WALK2_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.41181514, y: 0.50935024}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 1, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -121,91 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: PF-WALK2_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 0
-        width: 16
-        height: 26
-      alignment: 9
-      pivot: {x: 0.40578556, y: 0.5164792}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dffd3055e1ef05cd0800000000000000
-      internalID: -2571275980999761923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PF-WALK2_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 16
-        height: 26
-      alignment: 9
-      pivot: {x: 0.41108918, y: 0.5131085}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59c2ac063edce0540800000000000000
-      internalID: 4976141014756109461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PF-WALK2_2
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 0
-        width: 16
-        height: 26
-      alignment: 9
-      pivot: {x: 0.4115367, y: 0.51446325}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d750253679bd9f810800000000000000
-      internalID: 1799710969364088189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PF-WALK2_3
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 0
-        width: 16
-        height: 26
-      alignment: 9
-      pivot: {x: 0.4120221, y: 0.51416475}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0767c1e0dac7e9e70800000000000000
-      internalID: 9123866977807136368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

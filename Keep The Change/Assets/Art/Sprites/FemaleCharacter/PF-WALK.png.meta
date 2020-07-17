@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: b664a57503882674e8babd7b0d0e2c79
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8109526157562156758
+    second: PF-WALK_0
+  - first:
+      213: 8353276320891542177
+    second: PF-WALK_1
+  - first:
+      213: 5344518541568223097
+    second: PF-WALK_2
+  - first:
+      213: -6973347160990280471
+    second: PF-WALK_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PF-WALK_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.37421364, y: 0.51894957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d61b3ef213da8070800000000000000
+      internalID: 8109526157562156758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF-WALK_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3781345, y: 0.5174988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa1c696e8ccce370800000000000000
+      internalID: 8353276320891542177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF-WALK_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3750038, y: 0.5200663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977a9ad0c4b8b2a40800000000000000
+      internalID: 5344518541568223097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PF-WALK_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 16
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3750038, y: 0.5200663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e412b514b1b93f90800000000000000
+      internalID: -6973347160990280471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
