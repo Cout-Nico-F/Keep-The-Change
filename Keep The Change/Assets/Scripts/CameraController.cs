@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] GameObject player; // GO for the camera to follow
     [SerializeField] Vector3 offset; // offset for the Camera Following the GO
-    [SerializeField] bool followPlayer; // checkbox in the Inspector
+    [SerializeField] bool followPlayer = false; // checkbox in the Inspector
 
     [SerializeField] Vector3 moveScreenRight = new Vector3 (28,0,0);
 
@@ -20,15 +20,13 @@ public class CameraController : MonoBehaviour
     {
         if (followPlayer == true)
         { 
-        transform.position = player.transform.position + offset;
+            if (player != null) transform.position = player.transform.position + offset;
         }
     }
 
     public void MoveCameraRight()
     {
-        
         transform.position = transform.position + moveScreenRight;
-
     }
 
 }
