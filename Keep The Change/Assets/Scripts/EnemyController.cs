@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
     [Header("Enemy Targetting")]
     [SerializeField] Transform player;
     [SerializeField] float targettingRange = 10f;
-
+    Vector2 movementDirection;
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -27,8 +27,26 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SetDirectionToTarget();
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (Vector3.Distance(player.position,transform.position) < targettingRange)
+        { 
+        MoveToTarget(movementDirection);
+        }
+    }
+
+    void SetDirectionToTarget()
+    {
         Vector3 direction = player.position - transform.position;
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        //rb.rotation = angle;
+        direction.Normalize();
+        movementDirection = direction;
+    }
+    void MoveToTarget(Vector2 direction)
+    {
+        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 }
