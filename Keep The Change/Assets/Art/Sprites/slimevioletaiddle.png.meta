@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: 0a16bbef715836044963cfbb2c2bece5
+guid: ee87547fb7f90b94c879680c3d1c202b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8658220750014065679
+    second: slimevioletaiddle_0
+  - first:
+      213: -9079339762851474286
+    second: slimevioletaiddle_1
+  - first:
+      213: 539519390147380946
+    second: slimevioletaiddle_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,7 +118,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: slimevioletaiddle_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3de70e912d7d780800000000000000
+      internalID: -8658220750014065679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimevioletaiddle_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 5
+        width: 22
+        height: 17
+      alignment: 9
+      pivot: {x: 0.49428245, y: 0.5517943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29498201794bff180800000000000000
+      internalID: -9079339762851474286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimevioletaiddle_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 6
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d68b2fd602cc7700800000000000000
+      internalID: 539519390147380946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
