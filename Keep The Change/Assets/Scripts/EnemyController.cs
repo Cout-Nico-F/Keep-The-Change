@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Vector3 pointB = new Vector3 (9,0,0);
     Vector3 waypointDirection;
     [SerializeField] bool patrolling = false;
+    bool returning = false;
 
     [Header("Enemy Targetting")]
     [SerializeField] Transform player;
@@ -34,7 +35,7 @@ public class EnemyController : MonoBehaviour
         SetDirectionToWaypoint();
 
         //animator.SetFloat("Horizontal", movementDirection.x);
-        if(patrolling)
+        if(patrolling || returning)
         {
             animator.SetFloat("Vertical", waypointDirection.y);
         }
@@ -44,14 +45,16 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(player.position, transform.position) < targettingRange)
+        if (Vector3.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:
         {
             MoveToTarget(movementDirection);
             patrolling = false;
+            returning = false;
         }
         else
         {
             MoveToWaypoint(waypointDirection);
+            returning = true;
         }
     }
 
@@ -90,6 +93,7 @@ public class EnemyController : MonoBehaviour
         else if (!patrolling)
         {
             Debug.Log("C");
+            //returning = true;
             direction = directionToA;
             direction.Normalize();
             waypointDirection = direction;
@@ -98,7 +102,7 @@ public class EnemyController : MonoBehaviour
     }
     void MoveToTarget(Vector2 direction)
     {
-        
+        //returning = false;
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
     void MoveToWaypoint (Vector3 waypointDirection)
