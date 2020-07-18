@@ -97,8 +97,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  pointA: {x: 9, y: -3, z: 0}
   player: {fileID: 0}
-  targettingRange: 10
+  targettingRange: 5
 --- !u!50 &4981810191987614437
 Rigidbody2D:
   serializedVersion: 4
