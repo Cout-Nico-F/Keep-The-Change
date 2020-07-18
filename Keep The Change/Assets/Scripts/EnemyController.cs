@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Enemy Pathing")]
     // Waypoints
-    [SerializeField] Vector3 pointA = new Vector3 (9,0,0);
+    //[SerializeField] Vector3 pointA = new Vector3 (9,0,0);
     //[SerializeField] Vector3 pointB = new Vector3 (0,0,0);
     Vector3 waypointDirection;
 
@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            MoveToWaypoint(pointA);
+            MoveToWaypoint(waypointDirection);
         }
     }
 
