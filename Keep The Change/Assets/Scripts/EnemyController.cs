@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] Animator animator;
+
     [Header("Enemy Stats")]
     //Enemy Stats
     [SerializeField] float moveSpeed = 5f;
@@ -30,6 +32,14 @@ public class EnemyController : MonoBehaviour
     {
         SetDirectionToTarget();
         SetDirectionToWaypoint();
+
+        //animator.SetFloat("Horizontal", movementDirection.x);
+        if(patrolling)
+        {
+            animator.SetFloat("Vertical", waypointDirection.y);
+        }
+        else animator.SetFloat("Vertical", movementDirection.y); 
+
     }
 
     private void FixedUpdate()
@@ -52,6 +62,7 @@ public class EnemyController : MonoBehaviour
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
             movementDirection = direction;
+            
         }
         else return;
     }
@@ -87,10 +98,12 @@ public class EnemyController : MonoBehaviour
     }
     void MoveToTarget(Vector2 direction)
     {
+        
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
     void MoveToWaypoint (Vector3 waypointDirection)
     {
+        
         rb.MovePosition((Vector2)transform.position + ((Vector2)waypointDirection * (moveSpeed/3) * Time.deltaTime));
     }
 }

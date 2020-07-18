@@ -16,24 +16,17 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
-        AnimationSetter();
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);//little performance trick (sqrmagnitude instead of magnitude)
     }
-
     private void FixedUpdate()
     {
         PlayerMovement();
     }
     void PlayerMovement()
     {
-        
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
-    }
-
-private void AnimationSetter ()
-    {
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);//little performance trick (sqrmagnitude instead of magnitude)
     }
 }
