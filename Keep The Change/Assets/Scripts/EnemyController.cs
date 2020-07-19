@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     // Waypoints
     [SerializeField] Vector3 pointA = new Vector3(9, -3, 0);
     [SerializeField] Vector3 pointB = new Vector3(9, 0, 0);
-    Vector3 waypointDirection;
+    Vector2 waypointDirection;
     [SerializeField] bool patrolling = false;
     bool returning = false;
 
@@ -34,7 +34,6 @@ public class EnemyController : MonoBehaviour
         SetDirectionToTarget();
         SetDirectionToWaypoint();
 
-        //animator.SetFloat("Horizontal", movementDirection.x);
         if (patrolling || returning)
         {
             animator.SetFloat("Vertical", waypointDirection.y);
@@ -45,7 +44,8 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:
+        //parece no estar entrando nunca en este if desde el ultimo cambio  
+        if (Vector2.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:  Vector3.Distance(player.position, transform.position) < targettingRange
         {
             MoveToTarget(movementDirection);
             patrolling = false;
@@ -62,7 +62,7 @@ public class EnemyController : MonoBehaviour
     {
         if (player != null)
         {
-            Vector3 direction = player.position - transform.position;
+            Vector2 direction = player.position - transform.position;
             direction.Normalize();
             movementDirection = direction;
 
@@ -72,17 +72,18 @@ public class EnemyController : MonoBehaviour
 
     void SetDirectionToWaypoint()
     {
-        Vector3 directionToA = pointA - transform.position;
-        Vector3 directionToB = pointB - transform.position;
-        Vector3 direction;
-        if (Vector3.Distance(pointA, transform.position) < 0.5f)
+        Vector2 directionToA = pointA - transform.position;
+        Vector2 directionToB = pointB - transform.position;
+        Vector2 direction;
+
+        if (Vector2.Distance(pointA, transform.position) < 0.1f)
         {
             patrolling = true;
             direction = directionToB;
             direction.Normalize();
             waypointDirection = direction;
         }
-        else if (Vector3.Distance(pointB, transform.position) < 0.5f && patrolling == true)
+        else if (Vector2.Distance(pointB, transform.position) < 0.1f && patrolling == true)
         {
             direction = directionToA;
             direction.Normalize();
@@ -90,7 +91,6 @@ public class EnemyController : MonoBehaviour
         }
         else if (!patrolling)
         {
-            //returning = true;
             direction = directionToA;
             direction.Normalize();
             waypointDirection = direction;
@@ -99,11 +99,11 @@ public class EnemyController : MonoBehaviour
     }
     void MoveToTarget(Vector2 direction)
     {
-        //returning = false;
+        if(Vector2.Distance(player.position , transform.position) > 0.1f) //tal vez podemos poner aca un tipo de ataque ( como cuando este a cierta distancia un dash y un rebote hacia atras para volver a hacer el dash
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-    void MoveToWaypoint(Vector3 waypointDirection)
+    void MoveToWaypoint(Vector2 waypointDirection)
     {
-        rb.MovePosition((Vector2)transform.position + ((Vector2)waypointDirection * (moveSpeed / 3) * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (waypointDirection * (moveSpeed / 2) * Time.deltaTime));
     }
 }

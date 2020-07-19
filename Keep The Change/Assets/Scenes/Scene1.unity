@@ -10648,7 +10648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 984422564}
   offset: {x: 0, y: 0, z: -10}
-  followPlayer: 1
+  followPlayer: 0
   moveScreenRight: {x: 28, y: 0, z: 0}
 --- !u!20 &519420031
 Camera:
@@ -17830,7 +17830,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 7200d8f21d777ae4594d82d618a68f05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94793,6 +94793,11 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 437884025760676771, guid: 13a638a3f54177d418e316a3d19e16c3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351190, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: startSpeed
@@ -94858,6 +94863,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2468011369179351195, guid: 13a638a3f54177d418e316a3d19e16c3,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a638a3f54177d418e316a3d19e16c3, type: 3}
 --- !u!4 &2468011369071546431 stripped
@@ -94873,20 +94883,59 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 64885175}
     m_Modifications:
+    - target: {fileID: 544265396, guid: 72d99f8e66c49334592ebbaa32c00b18, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810191987614437, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2468011369071546431}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: patrolling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: targettingRange
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: pointA.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: pointB.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029020, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4981810192786029021, guid: 72d99f8e66c49334592ebbaa32c00b18,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.64
+      value: 8.83
       objectReference: {fileID: 0}
     - target: {fileID: 4981810192786029021, guid: 72d99f8e66c49334592ebbaa32c00b18,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.27
+      value: -5.85
       objectReference: {fileID: 0}
     - target: {fileID: 4981810192786029021, guid: 72d99f8e66c49334592ebbaa32c00b18,
         type: 3}
@@ -94937,6 +94986,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029023, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981810192786029023, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002876735756611644, guid: 72d99f8e66c49334592ebbaa32c00b18,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72d99f8e66c49334592ebbaa32c00b18, type: 3}
