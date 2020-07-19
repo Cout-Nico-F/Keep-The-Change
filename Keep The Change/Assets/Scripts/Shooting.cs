@@ -8,8 +8,10 @@ public class Shooting : MonoBehaviour
     float nextFire;
     [SerializeField] Transform fireSource;
     [SerializeField] GameObject bullet;
+    AudioSource audioSource;
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         if (fireSource == null)
         {
             Debug.Log("No Fire Source");
@@ -38,6 +40,7 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         Debug.Log("Shoot");
+        audioSource.Play();
         Instantiate(bullet, transform.position, bullet.transform.rotation);
     }
 }

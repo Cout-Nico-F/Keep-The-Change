@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae8e00a23d89b14cba2e651cb2f7408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 5
+  startSpeed: 7
   animator: {fileID: 2468011369179351189}
 --- !u!114 &437884025760676771
 MonoBehaviour:
@@ -113,14 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c6ae39a734ebed48884bb8ec58b9176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0
-  nextFire: 0
-  damage: 10
-  toHit:
-    serializedVersion: 2
-    m_Bits: 256
+  fireRate: 1
   fireSource: {fileID: 49742472958482415}
-  rayCastDist: 5
+  bullet: {fileID: 3615338312924908661, guid: c72b73592c272fd44923c2d98b7f8ff1, type: 3}
+  bulletSound: {fileID: 0}
 --- !u!61 &2468011369179351188
 BoxCollider2D:
   m_ObjectHideFlags: 0
