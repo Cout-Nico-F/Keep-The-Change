@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1196911477
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 3dff98c368b99bd46bd0c9c6dd7579a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2468011369179351194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c6ae39a734ebed48884bb8ec58b9176, type: 3}
   m_Name: 
@@ -116,7 +116,6 @@ MonoBehaviour:
   fireRate: 1
   fireSource: {fileID: 49742472958482415}
   bullet: {fileID: 3615338312924908661, guid: c72b73592c272fd44923c2d98b7f8ff1, type: 3}
-  bulletSound: {fileID: 0}
 --- !u!61 &2468011369179351188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,7 +154,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
