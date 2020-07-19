@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour
 {
     [SerializeField] float fireRate;
     float nextFire;
-    [SerializeField] Transform fireSource;
+    [SerializeField] Transform fireSource = null;
     [SerializeField] GameObject bullet;
     AudioSource audioSource;
     void Start()
