@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4981810192786029020}
   - component: {fileID: 4981810191987614437}
   - component: {fileID: 8002876735756611644}
+  - component: {fileID: 544265396}
   m_Layer: 8
   m_Name: Slime
   m_TagString: Enemy
@@ -97,10 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3123658f49809c943b69b92a3172b735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 544265396}
   moveSpeed: 5
   pointA: {x: 9, y: -3, z: 0}
-  pointB: {x: 9, y: 0, z: 0}
+  pointB: {x: 9, y: 3, z: 0}
   patrolling: 0
   player: {fileID: 0}
   targettingRange: 5
@@ -159,3 +160,22 @@ PolygonCollider2D:
       - {x: 0.58317614, y: -0.08863667}
       - {x: 0.46768236, y: 0.10385248}
       - {x: 0.27851963, y: 0.24168497}
+--- !u!95 &544265396
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4981810192786029023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c47c3837c35d8374d9276aa6dce40214, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

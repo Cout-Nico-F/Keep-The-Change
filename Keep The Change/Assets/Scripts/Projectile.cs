@@ -20,4 +20,13 @@ public class Projectile : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.Translate(direction * step);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        { 
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
+        }
+    }
 }
