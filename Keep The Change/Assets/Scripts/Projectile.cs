@@ -24,9 +24,11 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
-        { 
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        {
+            //llamar al metodo hit del enemy golpeado 
+            collision.gameObject.GetComponent<EnemyController>().Hit(34);
+            
+            //Destroy(gameObject);
         }
     }
 }

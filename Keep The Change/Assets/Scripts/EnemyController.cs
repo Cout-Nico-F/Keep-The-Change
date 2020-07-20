@@ -23,8 +23,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] float targettingRange = 10f;
     Vector2 movementDirection;
+    int health;
     void Start()
     {
+        health = 100;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -45,7 +47,7 @@ public class EnemyController : MonoBehaviour
     private void FixedUpdate()
     {
         //parece no estar entrando nunca en este if desde el ultimo cambio  
-        if (Vector2.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:  Vector3.Distance(player.position, transform.position) < targettingRange
+        if (Vector2.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:
         {
             MoveToTarget(movementDirection);
             patrolling = false;
@@ -105,5 +107,25 @@ public class EnemyController : MonoBehaviour
     void MoveToWaypoint(Vector2 waypointDirection)
     {
         rb.MovePosition((Vector2)transform.position + (waypointDirection * (moveSpeed / 2) * Time.deltaTime));
+    }
+
+    public void Hit( int daño )
+    {
+        health -= daño;
+
+        if(health <= 0)
+        {
+            Die();
+            return;
+        }
+        animator.Play("hit");
+        moveSpeed -= 1;
+    }
+
+    private void Die ()
+    {
+        animator.Play("die");
+        moveSpeed = 0;
+        Destroy(gameObject, 1.33f);
     }
 }
