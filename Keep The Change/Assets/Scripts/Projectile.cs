@@ -6,12 +6,14 @@ public class Projectile : MonoBehaviour
 {
     Vector3 target;
     Vector3 direction;
+    float range = 0.5f;
     [SerializeField] float speed = 5.0f;
     void Start()
     {
         target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         target.z = 0;
         direction = (target - transform.position).normalized;
+        Destroy(gameObject, range);
 
     }
 
