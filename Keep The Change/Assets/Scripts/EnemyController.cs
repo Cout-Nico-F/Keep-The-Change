@@ -118,7 +118,7 @@ public class EnemyController : MonoBehaviour
             Die();
             return;
         }
-        animator.Play("hit");
+        animator.SetTrigger("hit");
         moveSpeed -= 1;
     }
 

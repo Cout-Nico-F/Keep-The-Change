@@ -1,0 +1,3080 @@
+fileFormatVersion: 2
+guid: ae297bed1eb082d489f2daf9f5c052be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5082383542199514332
+    second: slimelowhealth_0
+  - first:
+      213: 1220733942817915973
+    second: slimelowhealth_1
+  - first:
+      213: -6703677046243623883
+    second: slimelowhealth_2
+  - first:
+      213: -7241391453549185360
+    second: slimelowhealth_3
+  - first:
+      213: -1562645853472708449
+    second: slimelowhealth_4
+  - first:
+      213: -6759051378133928035
+    second: slimelowhealth_5
+  - first:
+      213: -8038620631824013073
+    second: slimelowhealth_6
+  - first:
+      213: 2832961967910167444
+    second: slimelowhealth_7
+  - first:
+      213: -7612965782556585396
+    second: slimelowhealth_8
+  - first:
+      213: 8466005730145805323
+    second: slimelowhealth_9
+  - first:
+      213: 7071040843626823295
+    second: slimelowhealth_10
+  - first:
+      213: 9145292985871574805
+    second: slimelowhealth_11
+  - first:
+      213: 4029477208943872370
+    second: slimelowhealth_12
+  - first:
+      213: -6312383576112061352
+    second: slimelowhealth_13
+  - first:
+      213: -8893920941966895952
+    second: slimelowhealth_14
+  - first:
+      213: 744021640814571166
+    second: slimelowhealth_15
+  - first:
+      213: 4994541524277334119
+    second: slimelowhealth_16
+  - first:
+      213: 4336201831295613271
+    second: slimelowhealth_17
+  - first:
+      213: -8237958363022770221
+    second: slimelowhealth_18
+  - first:
+      213: 2915657610819221826
+    second: slimelowhealth_19
+  - first:
+      213: -7736138459026579480
+    second: slimelowhealth_20
+  - first:
+      213: -421351747975346418
+    second: slimelowhealth_21
+  - first:
+      213: -8037772625861349178
+    second: slimelowhealth_22
+  - first:
+      213: 7320919301706394773
+    second: slimelowhealth_23
+  - first:
+      213: 6274278507013066042
+    second: slimelowhealth_24
+  - first:
+      213: 5571534048203949490
+    second: slimelowhealth_25
+  - first:
+      213: 8903817414679002303
+    second: slimelowhealth_26
+  - first:
+      213: -3921067321764409109
+    second: slimelowhealth_27
+  - first:
+      213: -6531134327573009657
+    second: slimelowhealth_28
+  - first:
+      213: -658207940826690761
+    second: slimelowhealth_29
+  - first:
+      213: 2773784439995568504
+    second: slimelowhealth_30
+  - first:
+      213: -5791119380709858053
+    second: slimelowhealth_31
+  - first:
+      213: 3768934783491234329
+    second: slimelowhealth_32
+  - first:
+      213: -4241735074919227354
+    second: slimelowhealth_33
+  - first:
+      213: 8014469646192524555
+    second: slimelowhealth_34
+  - first:
+      213: 7937732993457218569
+    second: slimelowhealth_35
+  - first:
+      213: 3303136080122167466
+    second: slimelowhealth_36
+  - first:
+      213: -4684916561879981587
+    second: slimelowhealth_37
+  - first:
+      213: 2365486881405925909
+    second: slimelowhealth_38
+  - first:
+      213: -8372563920276961462
+    second: slimelowhealth_39
+  - first:
+      213: 9057291700913627548
+    second: slimelowhealth_40
+  - first:
+      213: 3605543792922488926
+    second: slimelowhealth_41
+  - first:
+      213: -8851099301103041510
+    second: slimelowhealth_42
+  - first:
+      213: -1838999496893080750
+    second: slimelowhealth_43
+  - first:
+      213: -19282156477548283
+    second: slimelowhealth_44
+  - first:
+      213: 1449642509834363667
+    second: slimelowhealth_45
+  - first:
+      213: -3783732598455917895
+    second: slimelowhealth_46
+  - first:
+      213: 2552856181128085175
+    second: slimelowhealth_47
+  - first:
+      213: 7886052044018629932
+    second: slimelowhealth_48
+  - first:
+      213: 8371603087658548280
+    second: slimelowhealth_49
+  - first:
+      213: -6547268306608315132
+    second: slimelowhealth_50
+  - first:
+      213: -9213159400341925666
+    second: slimelowhealth_51
+  - first:
+      213: 5734164636950122390
+    second: slimelowhealth_52
+  - first:
+      213: -7024952950534106353
+    second: slimelowhealth_53
+  - first:
+      213: 4942456604194543467
+    second: slimelowhealth_54
+  - first:
+      213: -7776488937223582997
+    second: slimelowhealth_55
+  - first:
+      213: -5380153877961582684
+    second: slimelowhealth_56
+  - first:
+      213: 7590396708508199165
+    second: slimelowhealth_57
+  - first:
+      213: -5582150556950480813
+    second: slimelowhealth_58
+  - first:
+      213: 3867457939990196233
+    second: slimelowhealth_59
+  - first:
+      213: 1158398108778763887
+    second: slimelowhealth_60
+  - first:
+      213: 4922998381143697315
+    second: slimelowhealth_61
+  - first:
+      213: -2704416850306037099
+    second: slimelowhealth_62
+  - first:
+      213: -6718219471042980179
+    second: slimelowhealth_63
+  - first:
+      213: -8262284653426359541
+    second: slimelowhealth_64
+  - first:
+      213: -5000670253959700654
+    second: slimelowhealth_65
+  - first:
+      213: 5729578521685642449
+    second: slimelowhealth_66
+  - first:
+      213: -6850340608379693596
+    second: slimelowhealth_67
+  - first:
+      213: -6076989447506697300
+    second: slimelowhealth_68
+  - first:
+      213: -728353561663445296
+    second: slimelowhealth_69
+  - first:
+      213: 4592841605616426039
+    second: slimelowhealth_70
+  - first:
+      213: 8691544204917498580
+    second: slimelowhealth_71
+  - first:
+      213: -5890643124772334119
+    second: slimelowhealth_72
+  - first:
+      213: -6241730000306222592
+    second: slimelowhealth_73
+  - first:
+      213: 4186271241597315218
+    second: slimelowhealth_74
+  - first:
+      213: 3592067859621604637
+    second: slimelowhealth_75
+  - first:
+      213: 1877354448709844948
+    second: slimelowhealth_76
+  - first:
+      213: -6892563289704114726
+    second: slimelowhealth_77
+  - first:
+      213: -4044614541373420814
+    second: slimelowhealth_78
+  - first:
+      213: -7088844621624490512
+    second: slimelowhealth_79
+  - first:
+      213: -407180657726807355
+    second: slimelowhealth_80
+  - first:
+      213: 1469791046317886568
+    second: slimelowhealth_81
+  - first:
+      213: -2286288005453212486
+    second: slimelowhealth_82
+  - first:
+      213: 5267494299501000074
+    second: slimelowhealth_83
+  - first:
+      213: 603278641505492376
+    second: slimelowhealth_84
+  - first:
+      213: -3594398326824886167
+    second: slimelowhealth_85
+  - first:
+      213: 521834225620508774
+    second: slimelowhealth_86
+  - first:
+      213: 5612763817430714020
+    second: slimelowhealth_87
+  - first:
+      213: -8959452937828989669
+    second: slimelowhealth_88
+  - first:
+      213: -2800526145337576568
+    second: slimelowhealth_89
+  - first:
+      213: 7075428411965453351
+    second: slimelowhealth_90
+  - first:
+      213: 6774001618352512912
+    second: slimelowhealth_91
+  - first:
+      213: -4006588377811164870
+    second: slimelowhealth_92
+  - first:
+      213: -6862928197705290569
+    second: slimelowhealth_93
+  - first:
+      213: 1632402842036008858
+    second: slimelowhealth_94
+  - first:
+      213: -183267954033062568
+    second: slimelowhealth_95
+  - first:
+      213: -8540821011055233333
+    second: slimelowhealth_96
+  - first:
+      213: -6080929634573665937
+    second: slimelowhealth_97
+  - first:
+      213: -9117269569370987934
+    second: slimelowhealth_98
+  - first:
+      213: -8763744404971598832
+    second: slimelowhealth_99
+  - first:
+      213: -8084162991684264248
+    second: slimelowhealth_100
+  - first:
+      213: 3363829066793491050
+    second: slimelowhealth_101
+  - first:
+      213: 1467921972248589323
+    second: slimelowhealth_102
+  - first:
+      213: 8301720428982141884
+    second: slimelowhealth_103
+  - first:
+      213: 61948502570702447
+    second: slimelowhealth_104
+  - first:
+      213: 3013003574944922748
+    second: slimelowhealth_105
+  - first:
+      213: 2763273884911774304
+    second: slimelowhealth_106
+  - first:
+      213: -9012304504528144502
+    second: slimelowhealth_107
+  - first:
+      213: 8061962059819921603
+    second: slimelowhealth_108
+  - first:
+      213: 9117362453635871516
+    second: slimelowhealth_109
+  - first:
+      213: 6306353106651815162
+    second: slimelowhealth_110
+  - first:
+      213: 7433415842065262785
+    second: slimelowhealth_111
+  - first:
+      213: 5062167030951513129
+    second: slimelowhealth_112
+  - first:
+      213: -657739383355152605
+    second: slimelowhealth_113
+  - first:
+      213: -2489557093586463439
+    second: slimelowhealth_114
+  - first:
+      213: -5395520579491185447
+    second: slimelowhealth_115
+  - first:
+      213: -7111191472678661491
+    second: slimelowhealth_116
+  - first:
+      213: 6347929395442419569
+    second: slimelowhealth_117
+  - first:
+      213: -8218745441203569052
+    second: slimelowhealth_118
+  - first:
+      213: 3193658495111731507
+    second: slimelowhealth_119
+  - first:
+      213: -8038437597302851065
+    second: slimelowhealth_120
+  - first:
+      213: 1739700285868172532
+    second: slimelowhealth_121
+  - first:
+      213: -7065711338216023491
+    second: slimelowhealth_122
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slimelowhealth_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4f71d67e0488640800000000000000
+      internalID: 5082383542199514332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5448ce2ad0be0f010800000000000000
+      internalID: 1220733942817915973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c75b97e31c7f2a0800000000000000
+      internalID: -6703677046243623883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6b6abe6d8618b90800000000000000
+      internalID: -7241391453549185360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_4
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98a50220ed505ae0800000000000000
+      internalID: -1562645853472708449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_5
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9776b325960332a0800000000000000
+      internalID: -6759051378133928035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_6
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8e0043025117090800000000000000
+      internalID: -8038620631824013073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_7
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4932a7f66e3b05720800000000000000
+      internalID: 2832961967910167444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_8
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42d28bb4ff495690800000000000000
+      internalID: -7612965782556585396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_9
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0423c35b5b4d7570800000000000000
+      internalID: 8466005730145805323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_10
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7eb7acee22612260800000000000000
+      internalID: 7071040843626823295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_11
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1460
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5172fbd448b9aee70800000000000000
+      internalID: 9145292985871574805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c1a52c249be730800000000000000
+      internalID: 4029477208943872370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_13
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854a4dbf498e568a0800000000000000
+      internalID: -6312383576112061352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_14
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4d7a97602729480800000000000000
+      internalID: -8893920941966895952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ea4f58dbb435a00800000000000000
+      internalID: 744021640814571166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_16
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7601d7add0d205540800000000000000
+      internalID: 4994541524277334119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_17
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759f5c467984d2c30800000000000000
+      internalID: 4336201831295613271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_18
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfb191f384ecad80800000000000000
+      internalID: -8237958363022770221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_19
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2493b83362f767820800000000000000
+      internalID: 2915657610819221826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_20
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef9b703f07b3a490800000000000000
+      internalID: -7736138459026579480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_21
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07807051de072af0800000000000000
+      internalID: -421351747975346418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_22
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0fc2af168147090800000000000000
+      internalID: -8037772625861349178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_23
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1332
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ca2872151299560800000000000000
+      internalID: 7320919301706394773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dc1604f07b21750800000000000000
+      internalID: 6274278507013066042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_25
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5c03592b0125d40800000000000000
+      internalID: 5571534048203949490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcf0e2a3c6b09b70800000000000000
+      internalID: 8903817414679002303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_27
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be017d9ab029599c0800000000000000
+      internalID: -3921067321764409109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_28
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ba6a8beefbc55a0800000000000000
+      internalID: -6531134327573009657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_29
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b0faa7d539dd6f0800000000000000
+      internalID: -658207940826690761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_30
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871117580467e7620800000000000000
+      internalID: 2773784439995568504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_31
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4a8ec1b9fc1afa0800000000000000
+      internalID: -5791119380709858053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_32
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91adb978732fd4430800000000000000
+      internalID: 3768934783491234329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_33
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620ef1c4c645225c0800000000000000
+      internalID: -4241735074919227354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_34
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0db4744ead193f60800000000000000
+      internalID: 8014469646192524555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_35
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1204
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9046ae40a1e782e60800000000000000
+      internalID: 7937732993457218569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_36
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0457c93c817dd20800000000000000
+      internalID: 3303136080122167466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_37
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1acce6535dbfeb0800000000000000
+      internalID: -4684916561879981587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_38
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51afb0729c5e3d020800000000000000
+      internalID: 2365486881405925909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_39
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47c3a8697daecb80800000000000000
+      internalID: -8372563920276961462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_40
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91ec0c70d6f1bd70800000000000000
+      internalID: 9057291700913627548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_41
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5072470af6790230800000000000000
+      internalID: 3605543792922488926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_42
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a148b0ea4149a2580800000000000000
+      internalID: -8851099301103041510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_43
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bd09573bf8a76e0800000000000000
+      internalID: -1838999496893080750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_44
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509f6a81bfe7bbff0800000000000000
+      internalID: -19282156477548283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_45
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313abf1ae2a2e1410800000000000000
+      internalID: 1449642509834363667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_46
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b228ffaf3b7d7bc0800000000000000
+      internalID: -3783732598455917895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_47
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1076
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bebccecb219d6320800000000000000
+      internalID: 2552856181128085175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_48
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d39fb4d82e07d60800000000000000
+      internalID: 7886052044018629932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_49
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c737057a8ed2470800000000000000
+      internalID: 8371603087658548280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_50
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405207ff92e6325a0800000000000000
+      internalID: -6547268306608315132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_51
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0919bb658442080800000000000000
+      internalID: -9213159400341925666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_52
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fc40d3b58d39f40800000000000000
+      internalID: 5734164636950122390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_53
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f031593e28a528e90800000000000000
+      internalID: -7024952950534106353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_54
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b679cc26812279440800000000000000
+      internalID: 4942456604194543467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_55
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea8801638c541490800000000000000
+      internalID: -7776488937223582997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_56
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7d823ad8ad555b0800000000000000
+      internalID: -5380153877961582684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_57
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8ecea3791865960800000000000000
+      internalID: 7590396708508199165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_58
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358b73ad4a73882b0800000000000000
+      internalID: -5582150556950480813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_59
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 948
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90031e87188fba530800000000000000
+      internalID: 3867457939990196233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_60
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f661e3641f4731010800000000000000
+      internalID: 1158398108778763887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_61
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7a4e9c1f0025440800000000000000
+      internalID: 4922998381143697315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_62
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a8de8043bf77ad0800000000000000
+      internalID: -2704416850306037099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_63
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6de595cf614c2a0800000000000000
+      internalID: -6718219471042980179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_64
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b034c5712e7765d80800000000000000
+      internalID: -8262284653426359541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_65
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f9ed116ec0a9ab0800000000000000
+      internalID: -5000670253959700654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_66
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcc7c11f4d838f40800000000000000
+      internalID: 5729578521685642449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_67
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e55817e283bee0a0800000000000000
+      internalID: -6850340608379693596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_68
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3e0957b423aaba0800000000000000
+      internalID: -6076989447506697300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_69
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6e82e6b4e54e5f0800000000000000
+      internalID: -728353561663445296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_70
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cd66c3b1d0dbf30800000000000000
+      internalID: 4592841605616426039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_71
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 820
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d266b397619e9870800000000000000
+      internalID: 8691544204917498580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_72
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d51959b94b304ea0800000000000000
+      internalID: -5890643124772334119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_73
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a49d382abe069a0800000000000000
+      internalID: -6241730000306222592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_74
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29867d0b38f981a30800000000000000
+      internalID: 4186271241597315218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_75
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1de7ddcfa699d130800000000000000
+      internalID: 3592067859621604637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_76
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df79d8ace3bd0a10800000000000000
+      internalID: 1877354448709844948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_77
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5d945d432b850a0800000000000000
+      internalID: -6892563289704114726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_78
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2face000184aed7c0800000000000000
+      internalID: -4044614541373420814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_79
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5422cff5d5f9d90800000000000000
+      internalID: -7088844621624490512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_80
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2a8c06957695af0800000000000000
+      internalID: -407180657726807355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_81
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cc3d95b2fb56410800000000000000
+      internalID: 1469791046317886568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_82
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab499bc1c297540e0800000000000000
+      internalID: -2286288005453212486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_83
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 692
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f6223826e91940800000000000000
+      internalID: 5267494299501000074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_84
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dd3876ab64f5800800000000000000
+      internalID: 603278641505492376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_85
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960285404c12e1ec0800000000000000
+      internalID: -3594398326824886167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_86
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66060c1a67ded3700800000000000000
+      internalID: 521834225620508774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_87
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a68f1a44fa84ed40800000000000000
+      internalID: 5612763817430714020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_88
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b158fd2b501a9a380800000000000000
+      internalID: -8959452937828989669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_89
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883b5f20f488229d0800000000000000
+      internalID: -2800526145337576568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_90
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72438e847a8f03260800000000000000
+      internalID: 7075428411965453351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_91
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f92d9e496120e50800000000000000
+      internalID: 6774001618352512912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_92
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a316b53291db568c0800000000000000
+      internalID: -4006588377811164870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_93
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bca3c06a2bf1c0a0800000000000000
+      internalID: -6862928197705290569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_94
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97f4e96cb577a610800000000000000
+      internalID: 1632402842036008858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_95
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 564
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d852d44c6e47df0800000000000000
+      internalID: -183267954033062568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_96
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc63cd9aa88e87980800000000000000
+      internalID: -8540821011055233333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_97
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69371b27b23c9ba0800000000000000
+      internalID: -6080929634573665937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_98
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262e92cc1a3f87180800000000000000
+      internalID: -9117269569370987934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_99
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cc95f55ece06680800000000000000
+      internalID: -8763744404971598832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_100
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cedc4e37984fcf80800000000000000
+      internalID: -8084162991684264248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_101
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a1c53c6b8beae20800000000000000
+      internalID: 3363829066793491050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_102
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b043ed1a14b1f5410800000000000000
+      internalID: 1467921972248589323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_103
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3851aeeb2a53370800000000000000
+      internalID: 8301720428982141884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_104
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66181ab5d51cd000800000000000000
+      internalID: 61948502570702447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_105
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cf29fa9c650d920800000000000000
+      internalID: 3013003574944922748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_106
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06aa74735fe195620800000000000000
+      internalID: 2763273884911774304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_107
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 436
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8772f76dccdde280800000000000000
+      internalID: -9012304504528144502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_108
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c03e3087c7d1ef60800000000000000
+      internalID: 8061962059819921603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_109
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13337188d0678e70800000000000000
+      internalID: 9117362453635871516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_110
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc992eecbaa48750800000000000000
+      internalID: 6306353106651815162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_111
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8af0e035cc82760800000000000000
+      internalID: 7433415842065262785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_112
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c0f89181e604640800000000000000
+      internalID: 5062167030951513129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_113
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327e454048d3fd6f0800000000000000
+      internalID: -657739383355152605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_114
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13599bc7301537dd0800000000000000
+      internalID: -2489557093586463439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_115
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc3e11ae924f15b0800000000000000
+      internalID: -5395520579491185447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_116
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8293354809ff4d90800000000000000
+      internalID: -7111191472678661491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_117
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1770b920720681850800000000000000
+      internalID: 6347929395442419569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_118
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e33b5e09621fd80800000000000000
+      internalID: -8218745441203569052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_119
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 308
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3391b070b77225c20800000000000000
+      internalID: 3193658495111731507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_120
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 180
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a7e9f389bb17090800000000000000
+      internalID: -8038437597302851065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_121
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 180
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f461d25138a42810800000000000000
+      internalID: 1739700285868172532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimelowhealth_122
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 180
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1f2049fc81fd90800000000000000
+      internalID: -7065711338216023491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
