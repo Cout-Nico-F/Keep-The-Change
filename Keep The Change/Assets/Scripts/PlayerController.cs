@@ -26,13 +26,23 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
+        
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
+        
     }
     void MovementVariables()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        if (movement.x > 1)// i tryed to repair diagonalSpeed here but isnt working
+        {
+            movement.x = 1;
+        }
+        if (movement.y > 1)
+        {
+            movement.y = 1;
+        }
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
