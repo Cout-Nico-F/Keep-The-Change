@@ -35,7 +35,7 @@ public class InventoryUI : MonoBehaviour {
       x++;
       if (x > (ITEM_COLUMNS - 1)) {
         x = 0;
-        y++;
+        y--;
       }
     }
   }

@@ -10,6 +10,10 @@ public class Item {
     this.amount = amount;
   }
 
+  public ItemType GetItemType() {
+    return this.itemType;
+  }
+
   public Sprite GetSprite() {
     switch ( this.itemType ) {
       default:
