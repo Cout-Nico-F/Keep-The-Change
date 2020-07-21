@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        health = startHealth; 
+        health = startHealth;
+        new InventoryController().init(this);
     }
     void Update()
     {
