@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     Vector3 direction;
     float range = 0.5f;
     [SerializeField] float speed = 5.0f;
+    [SerializeField] int damage = 34;
     void Start()
     {
         target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -28,7 +29,7 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             //llamar al metodo hit del enemy golpeado 
-            collision.gameObject.GetComponent<EnemyController>().Hit(34);
+            collision.gameObject.GetComponent<EnemyController>().Hit(damage);
             
             //Destroy(gameObject);
         }
