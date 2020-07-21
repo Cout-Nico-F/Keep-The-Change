@@ -1,13 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float startSpeed = 5f;
     [SerializeField] Animator animator;
     Vector2 movement;
-    
+    [SerializeField] float startHealth;
+    float health;
+    [SerializeField] Image healthBar;
+
+    private void Start()
+    {
+        health = startHealth; 
+    }
     void Update()
     {
         MovementVariables();
@@ -30,5 +38,14 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);//little performance trick (sqrmagnitude instead of magnitude)
     }
-            
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 10;
+            healthBar.fillAmount = health / startHealth;
+        }
+    }
+
 }
