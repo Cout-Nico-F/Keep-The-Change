@@ -52,4 +52,9 @@ public class InventoryUI : MonoBehaviour {
     
   }
 
+  public void AddItem(Item item) {
+    this.inventory.AddItem(item);
+    this.RefreshInventoryItems();
+  }
+
 }

@@ -2,16 +2,13 @@ using UnityEngine;
 
 public class Item {
 
-  public enum ItemType {
-    Sword,
-    HealthPotion,
-    ManaPotion,
-    Coin,
-    Medkit
-  }
-
   public ItemType itemType;
   public int amount;
+
+  public Item( ItemType itemType, int amount ) {
+    this.itemType = itemType;
+    this.amount = amount;
+  }
 
   public Sprite GetSprite() {
     switch ( this.itemType ) {

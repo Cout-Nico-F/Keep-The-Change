@@ -9,22 +9,13 @@ public class Inventory {
     Debug.Log("inventory instantiated...");
     itemList = new List<Item>();
 
-    this.AddDummyItems();
+    //this.AddDummyItems();
   }
 
   private void AddDummyItems() {
-    this.AddItem( new Item { itemType = Item.ItemType.Sword, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.Sword, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.Sword, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.Sword, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
-    this.AddItem( new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
+    this.AddItem( new Item(ItemType.Sword, 1) );
+    this.AddItem( new Item(ItemType.HealthPotion, 1) );
+    this.AddItem( new Item(ItemType.ManaPotion, 1) );
   }
 
   public void AddItem( Item item ) {
