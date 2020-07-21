@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
     Vector3 direction;
     float range = 0.5f;
     [SerializeField] float speed = 5.0f;
-    [SerializeField] int damage = 34;
+    [SerializeField] float damage = 34;
     void Start()
     {
         target = Camera.main.ScreenToWorldPoint(Input.mousePosition);

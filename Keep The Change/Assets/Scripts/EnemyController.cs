@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class EnemyController : MonoBehaviour
     //Enemy Stats
     [SerializeField] float moveSpeed = 5f;
     Rigidbody2D rb;
+    float health;
+    [SerializeField] float startHealth;
+    [SerializeField] Image healthBar;
 
     [Header("Enemy Pathing")]
     // Waypoints
@@ -23,10 +27,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] float targettingRange = 10f;
     Vector2 movementDirection;
-    int health;
+
+   
+
     void Start()
     {
-        health = 100;
+        health = startHealth;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -46,7 +52,7 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //parece no estar entrando nunca en este if desde el ultimo cambio  
+        //parece no estar entrando nunca en este if desde el ultimo cambio // Era porque en el inspector el Player Transform estaba vacío, sin referencia. 
         if (Vector2.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:
         {
             MoveToTarget(movementDirection);
@@ -109,11 +115,12 @@ public class EnemyController : MonoBehaviour
         rb.MovePosition((Vector2)transform.position + (waypointDirection * (moveSpeed / 2) * Time.deltaTime));
     }
 
-    public void Hit( int daño )
+    public void Hit( float daño )
     {
         health -= daño;
+        healthBar.fillAmount = health / startHealth;
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
             return;
