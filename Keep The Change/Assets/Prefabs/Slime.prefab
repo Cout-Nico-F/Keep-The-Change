@@ -177,6 +177,7 @@ MonoBehaviour:
   moveSpeed: 4
   startHealth: 100
   healthBar: {fileID: 455775297339115624}
+  enemyCanvas: {fileID: 7988613040361357169}
   pointA: {x: 1, y: -4.33, z: 0}
   pointB: {x: 5, y: 3.88, z: 0}
   patrolling: 0
@@ -347,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6838349903338926092
 RectTransform:
   m_ObjectHideFlags: 0

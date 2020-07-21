@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour
     float health;
     [SerializeField] float startHealth;
     [SerializeField] Image healthBar;
+    [SerializeField] GameObject enemyCanvas;
 
     [Header("Enemy Pathing")]
     // Waypoints
@@ -118,6 +119,7 @@ public class EnemyController : MonoBehaviour
     public void Hit( float daño )
     {
         health -= daño;
+        enemyCanvas.SetActive(true);
         healthBar.fillAmount = health / startHealth;
 
         if (health <= 0)
