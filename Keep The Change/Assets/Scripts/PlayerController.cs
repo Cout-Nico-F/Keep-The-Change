@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth;
     float health;
     [SerializeField] Image healthBar;
+    [SerializeField] InventoryUI inventoryUI;
 
     private void Start()
     {
         health = startHealth;
-        new InventoryController().init(this);
     }
     void Update()
     {
