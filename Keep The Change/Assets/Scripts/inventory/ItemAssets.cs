@@ -8,13 +8,13 @@ public class ItemAssets : MonoBehaviour {
     Instance = this;
   }
 
-  public Sprite swordSprite;
-  public Sprite healthPotionSprite;
-  public Sprite manaPotionSprite;
-  public Sprite Wood;
-  public Sprite PinkFruit;
-  public Sprite GreenShroom;
-  public Sprite RedShroom;
-  public Sprite BrownShroom;//can they be serializeField instead of public? is it better in any way? just for know
+  [SerializeField] Sprite swordSprite;
+  [SerializeField] Sprite healthPotionSprite;
+  [SerializeField] Sprite manaPotionSprite;
+  [SerializeField] Sprite Wood;
+  [SerializeField] Sprite PinkFruit;
+  [SerializeField] Sprite GreenShroom;
+  [SerializeField] Sprite RedShroom;
+  [SerializeField] Sprite BrownShroom;
 
 }
