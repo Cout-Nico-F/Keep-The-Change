@@ -3,5 +3,10 @@ public enum ItemType {
   HealthPotion,
   ManaPotion,
   Coin,
-  Medkit
+  Medkit,
+  RedShroom,
+  BrownShroom,
+  GreenShroom,
+  PinkFruit,
+  Wood
 }
