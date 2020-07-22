@@ -50,8 +50,10 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Item"))
         {
             print("item hit..." + collision.GetComponent<ItemUI>().GetItemType());
-            ItemType itemType = collision.GetComponent<ItemUI>().GetItemType();
-            this.inventoryUI.AddItem( new Item( itemType, 1));
+            ItemUI itemUI = collision.GetComponent<ItemUI>();
+            this.inventoryUI.AddItem( new Item( itemUI.GetItemType(), 1));
+            Destroy( collision.gameObject );
+
         }
     }
 
