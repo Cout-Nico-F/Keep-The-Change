@@ -11,10 +11,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth;
     float health;
     [SerializeField] Image healthBar;
+    [SerializeField] InventoryUI inventoryUI;
 
     private void Start()
     {
-        health = startHealth; 
+        health = startHealth;
     }
     void Update()
     {
@@ -55,6 +56,16 @@ public class PlayerController : MonoBehaviour
         {
             health -= 10;
             healthBar.fillAmount = health / startHealth;
+        }
+        this.handleItemCollisions(collision);
+    }
+
+    private void handleItemCollisions(Collider2D collision) {
+      if (collision.CompareTag("Item"))
+        {
+            ItemUI itemUI = collision.GetComponent<ItemUI>();
+            this.inventoryUI.AddItem( new Item( itemUI.GetItemType(), 1));
+            Destroy( collision.gameObject );
         }
     }
 
