@@ -13,7 +13,6 @@ public class InventoryUI : MonoBehaviour {
   [SerializeField] private float INV_OFFSET_Y = 200f;
 
   private void Awake() {
-    Debug.Log("InventoryUi | Awake");
     this.canvas = GameObject.FindGameObjectWithTag("Canvas");
     this.itemSlotTemplateResource = Resources.Load("itemSlotTemplate");
     this.InitInventory();

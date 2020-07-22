@@ -47,13 +47,15 @@ public class PlayerController : MonoBehaviour
             health -= 10;
             healthBar.fillAmount = health / startHealth;
         }
-        if (collision.CompareTag("Item"))
+        this.handleItemCollisions(collision);
+    }
+
+    private void handleItemCollisions(Collider2D collision) {
+      if (collision.CompareTag("Item"))
         {
-            print("item hit..." + collision.GetComponent<ItemUI>().GetItemType());
             ItemUI itemUI = collision.GetComponent<ItemUI>();
             this.inventoryUI.AddItem( new Item( itemUI.GetItemType(), 1));
             Destroy( collision.gameObject );
-
         }
     }
 
