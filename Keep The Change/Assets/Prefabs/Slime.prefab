@@ -175,15 +175,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 544265396}
-  moveSpeed: 2
+  moveSpeed: 6.5
   startHealth: 100
   healthBar: {fileID: 455775297339115624}
   enemyCanvas: {fileID: 7988613040361357169}
-  pointA: {x: 1, y: -4.33, z: 0}
-  pointB: {x: 5, y: 3.88, z: 0}
+  pointA: {x: -20, y: 20, z: 0}
+  pointB: {x: 20, y: 20, z: 0}
   patrolling: 0
   player: {fileID: 0}
-  targettingRange: 4
+  targettingRange: 5
 --- !u!50 &4981810191987614437
 Rigidbody2D:
   serializedVersion: 4

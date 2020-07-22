@@ -9,13 +9,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     Vector2 movement;
     [SerializeField] float startHealth;
-    float health;
+    float health, lastSpeed;
     [SerializeField] Image healthBar;
     [SerializeField] InventoryUI inventoryUI;
 
     private void Start()
     {
         health = startHealth;
+        lastSpeed = startSpeed;
     }
     void Update()
     {
@@ -27,10 +28,11 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
-        
+        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.4f;
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
-        
+        startSpeed = lastSpeed;
+
     }
     void MovementVariables()
     {
