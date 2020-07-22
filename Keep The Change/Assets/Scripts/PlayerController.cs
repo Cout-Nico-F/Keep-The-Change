@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
-        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.4f;
+        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.5f;
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
         startSpeed = lastSpeed;
