@@ -31,7 +31,7 @@ public class InventoryUI : MonoBehaviour {
 
     foreach (Item item in this.inventory.GetItems()) {
       
-      this.CreateItem(x, y, itemSlotCellSize, item);
+      this.DisplayItem(x, y, itemSlotCellSize, item);
       x++;
       if (x > (ITEM_COLUMNS - 1)) {
         x = 0;
@@ -40,7 +40,7 @@ public class InventoryUI : MonoBehaviour {
     }
   }
 
-  private void CreateItem(int x, int y, float itemSlotCellSize, Item item) {
+  private void DisplayItem(int x, int y, float itemSlotCellSize, Item item) {
     GameObject itemSlotTemplate = Instantiate( this.itemSlotTemplateResource ) as GameObject;
     Vector2 positionUpdate = new Vector2((x * itemSlotCellSize) + INV_OFFSET_X, (y * itemSlotCellSize) + INV_OFFSET_Y);
     RectTransform itemSlotTemplateRT = itemSlotTemplate.GetComponent<RectTransform>();
@@ -49,6 +49,8 @@ public class InventoryUI : MonoBehaviour {
 
     Image image = itemSlotTemplateRT.Find("Image").GetComponent<Image>();
     image.sprite = item.GetSprite();
+
+    itemSlotTemplateRT.Find("Text").GetComponent<Text>().text = item.amount.ToString();
     
   }
 

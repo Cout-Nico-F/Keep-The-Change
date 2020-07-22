@@ -8,24 +8,7 @@ public class Inventory {
   public Inventory() {
     Debug.Log("inventory instantiated...");
     this.itemList = new List<Item>();
-
     //this.AddDummyItems();
-  }
-
-  private void AddDummyItems() {
-    this.AddItem( new Item(ItemType.Sword, 1) );
-    this.AddItem( new Item(ItemType.HealthPotion, 1) );
-    this.AddItem( new Item(ItemType.ManaPotion, 1) );
-    this.AddItem( new Item(ItemType.Sword, 1) );
-    this.AddItem( new Item(ItemType.HealthPotion, 1) );
-    this.AddItem( new Item(ItemType.ManaPotion, 1) );
-    this.AddItem( new Item(ItemType.Sword, 1) );
-    this.AddItem( new Item(ItemType.HealthPotion, 1) );
-    this.AddItem( new Item(ItemType.ManaPotion, 1) );
-    this.AddItem( new Item(ItemType.Sword, 1) );
-    this.AddItem( new Item(ItemType.HealthPotion, 1) );
-    this.AddItem( new Item(ItemType.ManaPotion, 1) );
-    Debug.Log("itemList[0] amount is : " + this.itemList[0].amount);
   }
 
   private bool ContainsItem( Item item ) {
@@ -58,6 +41,22 @@ public class Inventory {
 
   public List<Item> GetItems() {
     return this.itemList;
+  }
+
+  private void AddDummyItems() {
+    this.AddItem( new Item(ItemType.Sword, 1) );
+    this.AddItem( new Item(ItemType.HealthPotion, 1) );
+    this.AddItem( new Item(ItemType.ManaPotion, 1) );
+    this.AddItem( new Item(ItemType.Sword, 1) );
+    this.AddItem( new Item(ItemType.HealthPotion, 1) );
+    this.AddItem( new Item(ItemType.ManaPotion, 1) );
+    this.AddItem( new Item(ItemType.Sword, 1) );
+    this.AddItem( new Item(ItemType.HealthPotion, 1) );
+    this.AddItem( new Item(ItemType.ManaPotion, 1) );
+    this.AddItem( new Item(ItemType.Sword, 1) );
+    this.AddItem( new Item(ItemType.HealthPotion, 1) );
+    this.AddItem( new Item(ItemType.ManaPotion, 1) );
+    Debug.Log("itemList[0] amount is : " + this.itemList[0].amount);
   }
 
 }
