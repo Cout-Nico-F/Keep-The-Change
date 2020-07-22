@@ -28,7 +28,8 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
-        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.5f;
+        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.5f;//halves the speed when moves diagonal (when line 33&34 have more than 0 in his parameters).
+        //GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1; //changes the sorting layer number while navigating Y
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
         startSpeed = lastSpeed;
@@ -38,14 +39,6 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        if (movement.x > 1)// i tryed to repair diagonalSpeed here but isnt working
-        {
-            movement.x = 1;
-        }
-        if (movement.y > 1)
-        {
-            movement.y = 1;
-        }
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);

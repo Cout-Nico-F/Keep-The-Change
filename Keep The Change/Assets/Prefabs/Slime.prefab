@@ -149,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6958888902579620119, guid: f2c4db2ac1c45304abeee0ef3af6562b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -179,8 +179,8 @@ MonoBehaviour:
   startHealth: 100
   healthBar: {fileID: 455775297339115624}
   enemyCanvas: {fileID: 7988613040361357169}
-  pointA: {x: -20, y: 20, z: 0}
-  pointB: {x: 20, y: 20, z: 0}
+  pointA: {x: 1, y: -4.33, z: 0}
+  pointB: {x: 5, y: 3.88, z: 0}
   patrolling: 0
   player: {fileID: 0}
   targettingRange: 5
