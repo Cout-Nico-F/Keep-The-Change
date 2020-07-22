@@ -53,7 +53,6 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //parece no estar entrando nunca en este if desde el ultimo cambio // Era porque en el inspector el Player Transform estaba vacío, sin referencia. 
         if (Vector2.Distance(player.position, transform.position) < targettingRange)//if its in range to attack:
         {
             MoveToTarget(movementDirection);
