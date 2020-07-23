@@ -8,5 +8,6 @@ public enum ItemType {
   BrownShroom,
   GreenShroom,
   PinkFruit,
-  Wood
+  Wood,
+  R_FirePotion
 }

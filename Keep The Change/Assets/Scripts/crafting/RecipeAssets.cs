@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RecipeAssets : MonoBehaviour {
@@ -8,13 +10,13 @@ public class RecipeAssets : MonoBehaviour {
     Instance = this;
   }
 
-  [SerializeField] Recipe recipe;
-  // [SerializeField] Sprite healthPotionSprite;
-  // [SerializeField] Sprite manaPotionSprite;
-  // [SerializeField] Sprite Wood;
-  // [SerializeField] Sprite PinkFruit;
-  // [SerializeField] Sprite GreenShroom;
-  // [SerializeField] Sprite RedShroom;
-  // [SerializeField] Sprite BrownShroom;
+  [SerializeField] List<Recipe> recipeList;
+  
+  [Serializable]
+  public struct Recipe {
+    [SerializeField] ItemType itemTypeA;
+    [SerializeField] ItemType itemTypeB;
+    [SerializeField] ItemType itemResult;
+  }
 
 }
