@@ -1,21 +1,54 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class CraftingUI : MonoBehaviour {
 
   [SerializeField] GameObject player;
+  private InventoryUI playerInventoryUI;
 
   private void Awake() {
     print("CraftingUI Awake...");
-    print("craftingUi | this.player : " + this.player);
-    print("craftingUi | this.player.GetComponent<PlayerController>() : " + this.player.GetComponent<PlayerController>());
-    print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI : " + this.player.GetComponent<PlayerController>().InventoryUI);
-    print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI.GetInventory() : " + this.player.GetComponent<PlayerController>().InventoryUI.GetInventory());
+    // print("craftingUi | this.player : " + this.player);
+    // print("craftingUi | this.player.GetComponent<PlayerController>() : " + this.player.GetComponent<PlayerController>());
+    // print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI : " + this.player.GetComponent<PlayerController>().InventoryUI);
+    // print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI.GetInventory() : " + this.player.GetComponent<PlayerController>().InventoryUI.GetInventory());
     
-    InventoryUI playerInventoryUI = this.player.GetComponent<PlayerController>().InventoryUI;
-    Inventory playerInventory = playerInventoryUI.GetInventory();
+    this.playerInventoryUI = this.player.GetComponent<PlayerController>().InventoryUI;
 
-    playerInventory.PrintItems();
-    //this.player.InventoryUI.GetInventory().PrintItems();
+    playerInventoryUI.GetInventory().PrintItems();
+  }
+
+  private void Update() {
+    if (Input.GetKeyDown(KeyCode.C)) {
+      this.TryCraft();
+    }
+  }
+
+  private bool hasItems(ItemType itemA, ItemType itemB) {
+
+    List<Item> items = this.playerInventoryUI.GetInventory().GetItems();
+    bool aFound = false;
+    bool bFound = false;
+    items.ForEach( (Item item) => {
+      if (item.GetItemType() == itemA) {
+        aFound = true;
+      }
+      if (item.GetItemType() == itemB) {
+        bFound = true;
+      }
+    });
+    return (aFound && bFound);
+  }
+
+  private bool TryCraft() {
+
+    if (this.hasItems(ItemType.Sword, ItemType.HealthPotion)) {
+      print("sword and healthpot found!");
+    } else {
+      print("player inventory missing items");
+    }
+
+    return true;
   }
 
 }
