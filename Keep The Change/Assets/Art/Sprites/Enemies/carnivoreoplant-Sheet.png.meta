@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 638b7205bca5e764aa0ee5e71b4f004c
+guid: 8ba74fd1d0bffab47966b97d1bc35367
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5391605441418248398
-    second: cowslime-iddle-Sheet_0
+      213: -7748893685793363723
+    second: carnivoreoplant-Sheet_0
   - first:
-      213: 5678752083344732364
-    second: cowslime-iddle-Sheet_1
+      213: 4170053452010882325
+    second: carnivoreoplant-Sheet_1
   - first:
-      213: 1830022751464056404
-    second: cowslime-iddle-Sheet_2
-  - first:
-      213: 6512322553299354209
-    second: cowslime-iddle-Sheet_3
+      213: -2523482580636927675
+    second: carnivoreoplant-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,7 +75,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -90,7 +87,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -99,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cowslime-iddle-Sheet_0
+      name: carnivoreoplant-Sheet_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 8
-        width: 16
-        height: 13
+        y: 3
+        width: 38
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,41 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec04cc04594d2da40800000000000000
-      internalID: 5391605441418248398
+      spriteID: 5f8e4088f36667490800000000000000
+      internalID: -7748893685793363723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cowslime-iddle-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 8
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc0b547beeafece40800000000000000
-      internalID: 5678752083344732364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cowslime-iddle-Sheet_2
+      name: carnivoreoplant-Sheet_1
       rect:
         serializedVersion: 2
         x: 72
-        y: 8
-        width: 16
-        height: 13
+        y: 3
+        width: 38
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 456e5ef1ffb856910800000000000000
-      internalID: 1830022751464056404
+      spriteID: 515008d45810fd930800000000000000
+      internalID: 4170053452010882325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cowslime-iddle-Sheet_3
+      name: carnivoreoplant-Sheet_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 8
-        width: 17
-        height: 12
+        x: 136
+        y: 3
+        width: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1624c24cbda606a50800000000000000
-      internalID: 6512322553299354209
+      spriteID: 549ff3086f9cafcd0800000000000000
+      internalID: -2523482580636927675
       vertices: []
       indices: 
       edges: []
