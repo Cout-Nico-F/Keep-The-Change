@@ -44,6 +44,9 @@ public class CraftingUI : MonoBehaviour {
 
     if (this.hasItems(ItemType.Sword, ItemType.HealthPotion)) {
       print("sword and healthpot found!");
+      // remove those items from player inventory
+      // add crafted item to player inventory
+      this.playerInventoryUI.AddItem(new Item(ItemType.R_FirePotion, 1));
     } else {
       print("player inventory missing items");
     }
