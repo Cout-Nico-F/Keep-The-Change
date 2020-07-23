@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth;
     float health, lastSpeed;
     [SerializeField] Image healthBar;
+    public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI;
 
     private void Start()

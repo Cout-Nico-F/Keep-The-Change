@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class Item {
 
@@ -27,6 +28,10 @@ public class Item {
       case ItemType.GreenShroom: return ItemAssets.Instance.GreenShroom;
       case ItemType.BrownShroom: return ItemAssets.Instance.BrownShroom;
     }
+  }
+
+  public override String ToString() {
+    return "itemType : " + this.itemType.ToString() + " amount : " + this.amount;
   }
 
 }

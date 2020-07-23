@@ -7,7 +7,7 @@ public class Inventory {
 
   public Inventory() {
     this.itemList = new List<Item>();
-    //this.AddDummyItems();
+    this.AddDummyItems();
   }
 
   private bool ContainsItem( Item item ) {
@@ -52,6 +52,12 @@ public class Inventory {
     this.AddItem( new Item(ItemType.Sword, 1) );
     this.AddItem( new Item(ItemType.HealthPotion, 1) );
     this.AddItem( new Item(ItemType.ManaPotion, 1) );
+  }
+
+  public void PrintItems() {
+    foreach (Item item in this.itemList) {
+      Debug.Log("item: " + item.ToString());
+    }
   }
 
 }

@@ -13,6 +13,7 @@ public class InventoryUI : MonoBehaviour {
   [SerializeField] private float INV_OFFSET_Y = 200f;
 
   private void Awake() {
+    print("InventoryUI Awake");
     this.canvas = GameObject.FindGameObjectWithTag("Canvas");
     this.itemSlotTemplateResource = Resources.Load("itemSlotTemplate");
     this.InitInventory();
@@ -20,10 +21,11 @@ public class InventoryUI : MonoBehaviour {
 
   private void InitInventory() {
     this.inventory = new Inventory();
+    print("Inventory instantiated...");
     this.RefreshInventoryItems();
   }
 
-  private void RefreshInventoryItems() {
+  public void RefreshInventoryItems() {
     int x = 0;
     int y = 0;
     float itemSlotCellSize = 61f;
@@ -56,6 +58,10 @@ public class InventoryUI : MonoBehaviour {
   public void AddItem(Item item) {
     this.inventory.AddItem(item);
     this.RefreshInventoryItems();
+  }
+
+  public Inventory GetInventory() {
+    return this.inventory;
   }
 
 }
