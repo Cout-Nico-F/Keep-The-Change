@@ -9,6 +9,7 @@ public class SceneFader : MonoBehaviour
     [SerializeField] Image img;
     [SerializeField] float fadeSpeed = 1f;
     [SerializeField] AnimationCurve curve;
+    [SerializeField] string colliderFadesTo;
     void Start()
     {
         StartCoroutine(FadeIn());
@@ -42,5 +43,10 @@ public class SceneFader : MonoBehaviour
         }
 
         SceneManager.LoadScene(scene);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        FadeTo(colliderFadesTo);
     }
 }

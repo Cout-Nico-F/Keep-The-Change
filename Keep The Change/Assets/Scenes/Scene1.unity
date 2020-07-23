@@ -13107,8 +13107,8 @@ Transform:
   - {fileID: 1328870053}
   - {fileID: 1547465076}
   - {fileID: 911778764}
-  - {fileID: 729035135}
   - {fileID: 1328441213}
+  - {fileID: 729035135}
   - {fileID: 1337330140}
   - {fileID: 871851164}
   - {fileID: 356015902}
@@ -15169,6 +15169,7 @@ MonoBehaviour:
   player: {fileID: 984422564}
   offset: {x: 0, y: 0, z: -10}
   followPlayer: 1
+  setVolume: 0
   moveScreenRight: {x: 28, y: 0, z: 0}
 --- !u!20 &519420031
 Camera:
@@ -17662,7 +17663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &686293524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23265,7 +23266,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c881a013f931fb44296e0c916db8d4cd, type: 3}
+  m_Sprite: {fileID: 8022854639625453009, guid: 557a0d23f12a5d0418ddaea603aec8e3,
+    type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24730,7 +24732,7 @@ GameObject:
   - component: {fileID: 1054400929}
   - component: {fileID: 1054400928}
   m_Layer: 0
-  m_Name: Collider Right
+  m_Name: Collider Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24745,9 +24747,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1054400927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385f2512779aea34d9298614fff95dc3, type: 3}
+  m_Script: {fileID: 11500000, guid: ab67365af2808fa4a884a645b823972c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 1804587724}
+  fadeSpeed: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliderFadesTo: ShopInterior
 --- !u!61 &1054400929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24761,7 +24790,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.34802723, y: -0.2813015}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -24772,7 +24801,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.019781113, y: 15.74201}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1054400930
 Transform:
@@ -24782,7 +24811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054400927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.94, y: 0.18132743, z: -0.23887557}
+  m_LocalPosition: {x: -6.53, y: 1.44, z: -0.23887557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28702,7 +28731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 354163814}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1328441214
 SpriteRenderer:
@@ -32863,14 +32892,12 @@ MonoBehaviour:
     type: 3}
   manaPotionSprite: {fileID: -2968706119345278459, guid: 85860de6bd374de48b6045f0a89935ac,
     type: 3}
-  Wood: {fileID: -999168126492512501, guid: 538797ae208a2014390587912ebd5c08, type: 3}
-  PinkFruit: {fileID: 21300000, guid: 7650bb65869cad64d9d312efeb752005, type: 3}
-  GreenShroom: {fileID: 9036312699388765170, guid: e35fb3a205ea0db4cae18c9fcea73a16,
-    type: 3}
-  RedShroom: {fileID: -3168954748821871816, guid: e35fb3a205ea0db4cae18c9fcea73a16,
-    type: 3}
-  BrownShroom: {fileID: -6914702058438380672, guid: e35fb3a205ea0db4cae18c9fcea73a16,
-    type: 3}
+  wood: {fileID: 0}
+  pinkFruit: {fileID: 0}
+  greenShroom: {fileID: 0}
+  redShroom: {fileID: 0}
+  brownShroom: {fileID: 0}
+  r_FirePotion: {fileID: 0}
 --- !u!1001 &1598066042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96666,6 +96693,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1791479079}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804587724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5682856685564978784, guid: f677a7cf897eab045a79acc659d8b236,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005497693}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1805758731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3693201882875706404, guid: 3310c7f97431566408878ecb9575d6e5,
@@ -98002,7 +98041,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5195141816198746355, guid: 557a0d23f12a5d0418ddaea603aec8e3,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -98967,11 +99007,11 @@ Transform:
   - {fileID: 195857946}
   - {fileID: 1836564148}
   - {fileID: 651694491}
-  - {fileID: 386182492}
   - {fileID: 540155379}
   - {fileID: 1448242465}
-  - {fileID: 565752219}
+  - {fileID: 386182492}
   - {fileID: 777551866}
+  - {fileID: 565752219}
   m_Father: {fileID: 179947561}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100745,12 +100785,12 @@ PrefabInstance:
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.4
+      value: -2.66
       objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.8
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
