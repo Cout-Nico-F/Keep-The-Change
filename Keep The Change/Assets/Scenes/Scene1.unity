@@ -32995,11 +32995,14 @@ MonoBehaviour:
     type: 3}
   manaPotionSprite: {fileID: -2968706119345278459, guid: 85860de6bd374de48b6045f0a89935ac,
     type: 3}
-  wood: {fileID: 0}
-  pinkFruit: {fileID: 0}
-  greenShroom: {fileID: 0}
-  redShroom: {fileID: 0}
-  brownShroom: {fileID: 0}
+  wood: {fileID: 5752187391011037298, guid: 538797ae208a2014390587912ebd5c08, type: 3}
+  pinkFruit: {fileID: 21300000, guid: 7650bb65869cad64d9d312efeb752005, type: 3}
+  greenShroom: {fileID: 9036312699388765170, guid: e35fb3a205ea0db4cae18c9fcea73a16,
+    type: 3}
+  redShroom: {fileID: -3168954748821871816, guid: e35fb3a205ea0db4cae18c9fcea73a16,
+    type: 3}
+  brownShroom: {fileID: -6914702058438380672, guid: e35fb3a205ea0db4cae18c9fcea73a16,
+    type: 3}
   r_FirePotion: {fileID: 0}
 --- !u!1001 &1598066042
 PrefabInstance:
