@@ -7,7 +7,7 @@ public class Inventory {
 
   public Inventory() {
     this.itemList = new List<Item>();
-    this.AddDummyItems();
+    //this.AddDummyItems();
   }
 
   private bool ContainsItem( Item item ) {

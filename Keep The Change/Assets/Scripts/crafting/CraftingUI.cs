@@ -7,14 +7,7 @@ public class CraftingUI : MonoBehaviour {
   private InventoryUI playerInventoryUI;
 
   private void Awake() {
-    print("CraftingUI Awake...");
-    // print("craftingUi | this.player : " + this.player);
-    // print("craftingUi | this.player.GetComponent<PlayerController>() : " + this.player.GetComponent<PlayerController>());
-    // print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI : " + this.player.GetComponent<PlayerController>().InventoryUI);
-    // print("craftingUi | this.player.GetComponent<PlayerController>().InventoryUI.GetInventory() : " + this.player.GetComponent<PlayerController>().InventoryUI.GetInventory());
-    
     this.playerInventoryUI = this.player.GetComponent<PlayerController>().InventoryUI;
-
     playerInventoryUI.GetInventory().PrintItems();
   }
 
@@ -46,7 +39,6 @@ public class CraftingUI : MonoBehaviour {
     ItemType demoTypeB = ItemType.HealthPotion;
 
     if (this.hasItems(demoTypeA, demoTypeB)) {
-      print("sword and healthpot found!");
       // remove those items from player inventory
       this.playerInventoryUI.SubtractItem(new Item(demoTypeA, 1));
       this.playerInventoryUI.SubtractItem(new Item(demoTypeB, 1));
