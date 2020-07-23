@@ -147,7 +147,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 55
   m_Sprite: {fileID: 21300000, guid: 3dff98c368b99bd46bd0c9c6dd7579a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.75
   fireSource: {fileID: 49742472958482415}
-  bullet: {fileID: 3615338312924908661, guid: c72b73592c272fd44923c2d98b7f8ff1, type: 3}
+  bullet: {fileID: 3615338312924908661, guid: 7ca74eb308c54b343b27b637a25feb96, type: 3}
 --- !u!61 &2468011369179351188
 BoxCollider2D:
   m_ObjectHideFlags: 0
