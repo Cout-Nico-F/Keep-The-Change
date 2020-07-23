@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class CraftingAssets : MonoBehaviour {
+public class RecipeAssets : MonoBehaviour {
 
-  public static CraftingAssets Instance { get; private set; }
+  public static RecipeAssets Instance { get; private set; }
 
   private void Awake() {
     Instance = this;
   }
 
-  // [SerializeField] Sprite swordSprite;
+  [SerializeField] Recipe recipe;
   // [SerializeField] Sprite healthPotionSprite;
   // [SerializeField] Sprite manaPotionSprite;
   // [SerializeField] Sprite Wood;
