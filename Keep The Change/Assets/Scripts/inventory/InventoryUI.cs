@@ -60,6 +60,11 @@ public class InventoryUI : MonoBehaviour {
     this.RefreshInventoryItems();
   }
 
+  public void SubtractItem(Item item) {
+    this.inventory.SubtractItem(item);
+    this.RefreshInventoryItems();
+  }
+
   public Inventory GetInventory() {
     return this.inventory;
   }

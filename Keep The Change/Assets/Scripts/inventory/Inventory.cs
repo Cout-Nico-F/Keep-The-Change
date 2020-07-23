@@ -27,12 +27,33 @@ public class Inventory {
     }
   }
 
+  private void SubtractFromAmount( ItemType type ) {
+    int idx = 0;
+    foreach (Item i in this.itemList) {
+      if (i.GetItemType().Equals(type)) {
+        i.amount--;
+        if (i.amount == 0) {
+          this.itemList.RemoveAt(idx);
+          return;
+        }
+      }
+      idx++;
+    }
+  }
+
+  //@Todo subtract using item.amount
   public void AddItem( Item item ) {
     if (this.ContainsItem(item)) {
       this.AddToAmount(item.GetItemType());
     } else {
       this.itemList.Add(item);
     }
+  }
+
+  public void SubtractItem( Item item ) {
+    if (this.ContainsItem(item)) {
+      this.SubtractFromAmount(item.GetItemType());
+    } 
   }
 
   public List<Item> GetItems() {

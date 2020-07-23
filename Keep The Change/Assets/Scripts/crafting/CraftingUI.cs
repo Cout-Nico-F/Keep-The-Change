@@ -42,9 +42,14 @@ public class CraftingUI : MonoBehaviour {
 
   private bool TryCraft() {
 
-    if (this.hasItems(ItemType.Sword, ItemType.HealthPotion)) {
+    ItemType demoTypeA = ItemType.Sword;
+    ItemType demoTypeB = ItemType.HealthPotion;
+
+    if (this.hasItems(demoTypeA, demoTypeB)) {
       print("sword and healthpot found!");
       // remove those items from player inventory
+      this.playerInventoryUI.SubtractItem(new Item(demoTypeA, 1));
+      this.playerInventoryUI.SubtractItem(new Item(demoTypeB, 1));
       // add crafted item to player inventory
       this.playerInventoryUI.AddItem(new Item(ItemType.R_FirePotion, 1));
     } else {
