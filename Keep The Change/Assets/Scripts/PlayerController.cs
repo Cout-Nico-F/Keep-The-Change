@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Image healthBar;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI;
-
+    private bool ItemInRange = false;
+    private ItemUI UIreference;
     private void Start()
     {
         health = startHealth;
@@ -21,6 +22,10 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if(ItemInRange && Input.GetKeyDown(KeyCode.E))
+        {
+            Pick();
+        }
         MovementVariables();
     }
     private void FixedUpdate()
@@ -59,10 +64,25 @@ public class PlayerController : MonoBehaviour
     private void handleItemCollisions(Collider2D collision) {
       if (collision.CompareTag("Item"))
         {
-            ItemUI itemUI = collision.GetComponent<ItemUI>();
-            this.inventoryUI.AddItem( new Item( itemUI.GetItemType(), 1));
-            Destroy( collision.gameObject );
+            ItemInRange = true;
+            UIreference = collision.GetComponent<ItemUI>();
+                
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            ItemInRange = false;
+        }
+         
+    }
+
+    private void Pick ()
+    {
+        this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
+        Destroy(UIreference.gameObject);
     }
 
 }
