@@ -15,10 +15,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InventoryUI inventoryUI;
     private bool ItemInRange = false;
     private ItemUI UIreference;
+    
+
+
+    [SerializeField] Canvas canvas;
+
+
     private void Start()
     {
         health = startHealth;
         lastSpeed = startSpeed;
+
+        this.canvas = ReferenceUI.Instance.MainCanvas;
+        canvas.transform.GetChild(3).gameObject.SetActive(false);
     }
     void Update()
     {
@@ -66,7 +75,8 @@ public class PlayerController : MonoBehaviour
         {
             ItemInRange = true;
             UIreference = collision.GetComponent<ItemUI>();
-                
+            canvas.transform.GetChild(3).gameObject.SetActive(true);
+            //canvas.GetComponentInChildren<RectTransform>(1)          
         }
     }
 
@@ -75,6 +85,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Item"))
         {
             ItemInRange = false;
+            canvas.transform.GetChild(3).gameObject.SetActive(false);
         }
          
     }
