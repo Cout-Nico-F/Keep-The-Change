@@ -98175,12 +98175,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 437884025760676771, guid: 13a638a3f54177d418e316a3d19e16c3,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 3615338312924908661, guid: 7ca74eb308c54b343b27b637a25feb96,
-        type: 3}
     - target: {fileID: 2468011369179351190, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: healthBar
@@ -98250,11 +98244,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2468011369179351195, guid: 13a638a3f54177d418e316a3d19e16c3,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a638a3f54177d418e316a3d19e16c3, type: 3}
