@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     Vector2 movement;
     [SerializeField] float startHealth;
-    float health, lastSpeed;
+    public static float health; 
+    float lastSpeed;
     [SerializeField] Image healthBar;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI;
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
         {
             ItemInRange = true;
             UIreference = collision.GetComponent<ItemUI>();
+            Debug.Log("set ui reference to : " + UIreference);
             canvas.transform.GetChild(3).gameObject.SetActive(true);
                      
         }
@@ -92,8 +94,11 @@ public class PlayerController : MonoBehaviour
 
     private void Pick ()
     {
+        Debug.Log("current items : " + UIreference.GetItemType());
+        Item item = new Item(UIreference.GetItemType(), 1);
+        Debug.Log("item is : " + item);
         this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
-        Destroy(UIreference.gameObject);
+        //Destroy(UIreference.gameObject);
     }
 
     public void SavePlayer()
