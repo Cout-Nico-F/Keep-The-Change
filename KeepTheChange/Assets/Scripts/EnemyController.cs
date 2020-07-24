@@ -134,6 +134,7 @@ public class EnemyController : MonoBehaviour
     {
         animator.Play("die");
         moveSpeed = 0;
+        Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject, 1.33f);
     }
 }
