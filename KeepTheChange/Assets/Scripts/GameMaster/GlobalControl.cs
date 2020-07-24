@@ -8,7 +8,7 @@ public class GlobalControl : MonoBehaviour
     public static GlobalControl Instance;
 
     float health, lastSpeed;
-    //Inventory inventoryItems;
+    Inventory inventoryItems;
 
     void Awake()
     {
@@ -24,7 +24,7 @@ public class GlobalControl : MonoBehaviour
     }
             public float Health { get { return this.health; } set { this.health = value; } }
             public float LastSpeed { get { return this.lastSpeed; } set { this.lastSpeed = value; } }
-            //public Inventory Inventory { get { return this.inventoryItems; } set { this.inventoryItems = value; } }
+            public Inventory Inventory { get { return this.inventoryItems; } set { this.inventoryItems = value; } }
 
 }
 
