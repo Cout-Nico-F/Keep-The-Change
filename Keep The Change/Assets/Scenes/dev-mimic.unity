@@ -27695,11 +27695,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292659700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eb7f68447b7fd849a8c383b6468f789, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c1073f7e4baa884ca22fdd19a9993b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INV_OFFSET_X: 100
-  INV_OFFSET_Y: 100
+  INV_OFFSET_X: 0
+  INV_OFFSET_Y: 200
 --- !u!224 &1292659702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32993,7 +32993,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596428162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d7217f81616e04284c0a5861f96329, type: 3}
+  m_Script: {fileID: 11500000, guid: a35d49a9b1a16d84685b81e7692c1102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   swordSprite: {fileID: 8630615561131195372, guid: 840db86819f4e924984d32de5868f56e,
@@ -101210,7 +101210,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inventoryUI
       value: 
-      objectReference: {fileID: 1292659701}
+      objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.x
