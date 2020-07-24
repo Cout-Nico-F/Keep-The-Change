@@ -1,0 +1,3 @@
+[submodule "Keep The Change/Assets/igg-craftable-inventory"]
+	path = Keep The Change/Assets/igg-craftable-inventory
+	url = git@github.com:icarus-gg/unity-2d-craftable-inventory.git
