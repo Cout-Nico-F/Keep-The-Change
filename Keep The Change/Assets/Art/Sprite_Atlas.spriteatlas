@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 10102c88b40fe104db9fa297fa954291, type: 3}
-    totalSpriteSurfaceArea: 7449679
+    totalSpriteSurfaceArea: 7466496
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -493,6 +493,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c2b6d988b7fbab94889303fb08d760f2, type: 3}
   - {fileID: 21300000, guid: 83e5aed84a764de4bba6394661765197, type: 3}
   - {fileID: 21300000, guid: 6aca2119ec8cc2840929025a398c87c2, type: 3}
+  - {fileID: 6654724045234263336, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
+  - {fileID: 1297909691390307169, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
+  - {fileID: -5986896437173620542, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
+  - {fileID: -2490298975691008674, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
+  - {fileID: 5851578298381248870, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
+  - {fileID: 8579143334467757615, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
   - {fileID: 21300000, guid: 8b156549ae901bf4ab51b41b5178abd0, type: 3}
   - {fileID: 21300000, guid: 8f2a99496cdc7fb4fb87b7c839cb37f5, type: 3}
   - {fileID: 21300000, guid: 16bae94927f315149b83b49ee3278969, type: 3}
@@ -555,6 +561,17 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 14a9b03bb904fb04db4dba0405cd9248, type: 3}
   - {fileID: 21300000, guid: ec080b7b19ff28f47881b9351a684b29, type: 3}
   - {fileID: 21300000, guid: f08dce7b0b4decf408dc66b4cd41aad6, type: 3}
+  - {fileID: -5447412207395307467, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -3380928465043992302, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -7089222485048128082, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: 6927151648739203380, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -8962461109528748902, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: 6010843880968076053, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: 2011563336360847222, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -8717884237767202790, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: 8382083030387396777, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -1228157062688649311, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
+  - {fileID: -6092664273915432318, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
   - {fileID: -8479355535284377743, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
   - {fileID: 4004456793705433732, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
   - {fileID: 8022334212233496705, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
@@ -1305,6 +1322,12 @@ SpriteAtlas:
   - shopFINAL
   - inventory-square
   - dirtytileset-Sheet 2
+  - PF-ataque_4
+  - PF-ataque_5
+  - PF-ataque_0
+  - PF-ataque_1
+  - PF-ataque_2
+  - PF-ataque_3
   - iddlecharg
   - heartUI
   - render.png_15
@@ -1367,6 +1390,17 @@ SpriteAtlas:
   - render.png_43
   - tilepared2-16x16
   - inventory-background
+  - characterdead1t_8
+  - characterdead1t_9
+  - characterdead1t_4
+  - characterdead1t_5
+  - characterdead1t_6
+  - characterdead1t_7
+  - characterdead1t_0
+  - characterdead1t_1
+  - characterdead1t_2
+  - characterdead1t_3
+  - characterdead1t_10
   - slimemovement1-Sheet_0
   - slimemovement1-Sheet_1
   - slimemovement1-Sheet_2
