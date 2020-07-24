@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
             //llamar al metodo hit del enemy golpeado 
             collision.gameObject.GetComponent<EnemyController>().Hit(damage);
             
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
