@@ -74,6 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             ItemInRange = true;
             UIreference = collision.GetComponent<ItemUI>();
+            Debug.Log("set ui reference to : " + UIreference);
             canvas.transform.GetChild(3).gameObject.SetActive(true);
                      
         }
@@ -91,8 +92,11 @@ public class PlayerController : MonoBehaviour
 
     private void Pick ()
     {
+        Debug.Log("current items : " + UIreference.GetItemType());
+        Item item = new Item(UIreference.GetItemType(), 1);
+        Debug.Log("item is : " + item);
         this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
-        Destroy(UIreference.gameObject);
+        //Destroy(UIreference.gameObject);
     }
 
     public void SavePlayer()
