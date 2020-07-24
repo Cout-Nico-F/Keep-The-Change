@@ -116,9 +116,9 @@ public class PlayerController : MonoBehaviour
 
     private void PushEnemy(Collider2D collision)
     {
-        Rigidbody enemyRb = collision.gameObject.GetComponent<Rigidbody>();
-        Vector3 awayFromPlayer = collision.gameObject.transform.position - transform.position;
-        enemyRb.AddForce(awayFromPlayer * 2f, ForceMode.Impulse);
+        Rigidbody2D enemyRb = collision.gameObject.GetComponent<Rigidbody2D>();
+        Vector2 awayFromPlayer = collision.gameObject.transform.position - transform.position;
+        enemyRb.AddForce(awayFromPlayer * 1.5f, ForceMode2D.Impulse);
         Debug.Log("Pushing enemy: " + collision.gameObject.name);
     }
 
