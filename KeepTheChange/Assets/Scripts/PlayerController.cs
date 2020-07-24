@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     Vector2 movement;
     [SerializeField] float startHealth;
-    public static float health; 
+    public static float health;
     float lastSpeed;
     [SerializeField] Image healthBar;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
@@ -71,8 +71,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             health -= 10;
-            PushEnemy(collision);
             healthBar.fillAmount = health / startHealth;
+            PushEnemy(collision);
         }
         this.HandleItemCollisions(collision);
     }
