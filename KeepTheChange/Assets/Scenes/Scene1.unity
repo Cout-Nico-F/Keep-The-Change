@@ -101823,11 +101823,6 @@ PrefabInstance:
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 1292659701}
-    - target: {fileID: 2468011369179351190, guid: 13a638a3f54177d418e316a3d19e16c3,
-        type: 3}
-      propertyPath: startSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.x
