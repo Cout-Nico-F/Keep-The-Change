@@ -1,0 +1,3 @@
+[submodule "KeepTheChange/Assets/igg2d-craftable-inventory"]
+	path = KeepTheChange/Assets/igg2d-craftable-inventory
+	url = https://github.com/drMimic/unity-2d-craftable-inventory.git
