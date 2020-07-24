@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
+        isPaused = !isPaused;
 
         if (pauseMenuUI.activeSelf)
         {
@@ -75,21 +76,12 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverUI.SetActive(true);
-        if (gameOverUI.activeSelf)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-        }
     }
 
     public void Restart()
     {
+        //Debug.Log("WTF");
         Pause();
-        gameOver = false;
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
-
     }
 }

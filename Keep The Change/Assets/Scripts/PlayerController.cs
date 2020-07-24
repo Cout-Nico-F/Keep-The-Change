@@ -12,10 +12,10 @@ public class PlayerController : MonoBehaviour
     public static float health; 
     float lastSpeed;
     [SerializeField] Image healthBar;
-    public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
-    [SerializeField] InventoryUI inventoryUI;
+    //public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
+    //[SerializeField] InventoryUI inventoryUI;
     private bool ItemInRange = false;
-    private ItemUI UIreference;
+    //private ItemUI UIreference;
     
 
 
@@ -32,15 +32,21 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (!GameManager.gameOver)
+        { 
         if(ItemInRange && Input.GetKeyDown(KeyCode.E))
         {
             Pick();
         }
         MovementVariables();
+        }
     }
     private void FixedUpdate()
     {
-        PlayerMovement();
+        if (!GameManager.gameOver)
+        {
+            PlayerMovement();
+        }
     }
     void PlayerMovement()
     {
@@ -67,15 +73,15 @@ public class PlayerController : MonoBehaviour
             health -= 10;
             healthBar.fillAmount = health / startHealth;
         }
-        this.handleItemCollisions(collision);
+        this.HandleItemCollisions(collision);
     }
 
-    private void handleItemCollisions(Collider2D collision) {
+    private void HandleItemCollisions(Collider2D collision) {
       if (collision.CompareTag("Item"))
         {
             ItemInRange = true;
-            UIreference = collision.GetComponent<ItemUI>();
-            Debug.Log("set ui reference to : " + UIreference);
+            //UIreference = collision.GetComponent<ItemUI>();
+            //Debug.Log("set ui reference to : " + UIreference);
             canvas.transform.GetChild(3).gameObject.SetActive(true);
                      
         }
@@ -93,18 +99,18 @@ public class PlayerController : MonoBehaviour
 
     private void Pick ()
     {
-        Debug.Log("current items : " + UIreference.GetItemType());
-        Item item = new Item(UIreference.GetItemType(), 1);
-        Debug.Log("item is : " + item);
-        this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
+        //Debug.Log("current items : " + UIreference.GetItemType());
+        //Item item = new Item(UIreference.GetItemType(), 1);
+        //Debug.Log("item is : " + item);
+        //this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
         //Destroy(UIreference.gameObject);
     }
 
     public void SavePlayer()
     {
-        GlobalControl.Instance.Health = this.health;
+        //GlobalControl.Instance.Health = this.health;
         GlobalControl.Instance.LastSpeed = this.lastSpeed;
-        GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory();
+        //GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory();
     }
 
 }
