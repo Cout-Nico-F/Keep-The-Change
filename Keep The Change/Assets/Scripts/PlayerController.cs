@@ -98,8 +98,8 @@ public class PlayerController : MonoBehaviour
     public void SavePlayer()
     {
         GlobalControl.Instance.Health = this.health;
-        GlobalControl.Instance.Lastspeed = this.lastSpeed;
-        GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory;
+        GlobalControl.Instance.LastSpeed = this.lastSpeed;
+        GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory();
     }
 
 }
