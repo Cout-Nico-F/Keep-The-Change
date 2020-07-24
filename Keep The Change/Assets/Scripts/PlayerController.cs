@@ -43,8 +43,7 @@ public class PlayerController : MonoBehaviour
     }
     void PlayerMovement()
     {
-        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.5f;//halves the speed when moves diagonal (when line 33&34 have more than 0 in his parameters).
-        //GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1; //changes the sorting layer number while navigating Y
+        if ((movement.x > 0.05f || movement.x < -0.05) && (movement.y > 0.05f || movement.y < -0.05)) startSpeed /= 1.4f;//halves the speed when moves diagonal
         transform.Translate(Vector3.right * Time.deltaTime * startSpeed * movement.x);
         transform.Translate(Vector3.up * Time.deltaTime * startSpeed * movement.y);
         startSpeed = lastSpeed;
@@ -76,7 +75,7 @@ public class PlayerController : MonoBehaviour
             ItemInRange = true;
             UIreference = collision.GetComponent<ItemUI>();
             canvas.transform.GetChild(3).gameObject.SetActive(true);
-            //canvas.GetComponentInChildren<RectTransform>(1)          
+                     
         }
     }
 
@@ -94,6 +93,13 @@ public class PlayerController : MonoBehaviour
     {
         this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
         Destroy(UIreference.gameObject);
+    }
+
+    public void SavePlayer()
+    {
+        GlobalControl.Instance.Health = this.health;
+        GlobalControl.Instance.Lastspeed = this.lastSpeed;
+        GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory;
     }
 
 }

@@ -398,6 +398,7 @@ SpriteAtlas:
   - {fileID: -5669492636162163122, guid: cf7c5e96a3320b94186e9076345d0615, type: 3}
   - {fileID: 212629197819845937, guid: cf7c5e96a3320b94186e9076345d0615, type: 3}
   - {fileID: 7270174342595111430, guid: cf7c5e96a3320b94186e9076345d0615, type: 3}
+  - {fileID: 21300000, guid: cb0c25a6e500f2845905702586d66cc8, type: 3}
   - {fileID: 21300000, guid: 4bbfa0b61f0462242a7ed1ae227f6db1, type: 3}
   - {fileID: 21300000, guid: 851907b6806c9704a9d1bdfcfc577124, type: 3}
   - {fileID: 21300000, guid: 77c747d6948c0e1408e339cdbbcc9461, type: 3}
@@ -835,7 +836,6 @@ SpriteAtlas:
   - {fileID: 7404754893803780291, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
   - {fileID: 8112166423768589531, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
   - {fileID: -7939098446825549753, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
-  - {fileID: 21300000, guid: 6bf6e07f590758b42acc1bf966e5be76, type: 3}
   - {fileID: 539519390147380946, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
   - {fileID: -8658220750014065679, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
   - {fileID: -9079339762851474286, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
@@ -1201,6 +1201,7 @@ SpriteAtlas:
   - arbustos1v2.0 con flores_2
   - arbustos1v2.0 con flores_1
   - arbustos1v2.0 con flores_0
+  - nesttree
   - grassvariant
   - armariotiendasombra
   - render.png_13
@@ -1638,7 +1639,6 @@ SpriteAtlas:
   - slimeiddletry-Sheet_0
   - slimeiddletry-Sheet_3
   - slimeiddletry-Sheet_2
-  - Nest Tree
   - slimevioletaiddle_2
   - slimevioletaiddle_0
   - slimevioletaiddle_1
