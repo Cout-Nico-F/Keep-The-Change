@@ -20,6 +20,10 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.gameOver)
+        { return; }
+        if (GameManager.isPaused)
+        { return; }
         if (fireRate == 0)
         {
             if (Input.GetButton("Fire1"))
@@ -35,6 +39,7 @@ public class Shooting : MonoBehaviour
                 Shoot();
             }
         }
+        
     }
 
     void Shoot()
