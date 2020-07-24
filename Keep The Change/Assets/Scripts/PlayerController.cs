@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     Vector2 movement;
     [SerializeField] float startHealth;
-    float health, lastSpeed;
+    public static float health; 
+    float lastSpeed;
     [SerializeField] Image healthBar;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI;

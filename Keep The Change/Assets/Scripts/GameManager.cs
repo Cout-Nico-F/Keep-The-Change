@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static bool gameOver;
     public static bool isPaused = false;
     [SerializeField] GameObject pauseMenuUI;
-    //[SerializeField] GameObject gameOverUI;
+    [SerializeField] GameObject gameOverUI;
     [SerializeField] SceneFader sceneFader;
     [SerializeField] string menuScene = "MainMenu";
 
@@ -18,10 +19,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (gameOver == false)
         {
-            if (isPaused) Resume();
-            else Pause();
+            if (PlayerController.health <= 0 && !gameOver)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    if (isPaused) Resume();
+                    else Pause();
+                }
+            }
         }
     }
 
@@ -37,6 +44,10 @@ public class GameManager : MonoBehaviour
         //pauseMenuUI.SetActive(true);
         //Time.timeScale = 0f;
         //isPaused = true;
+        if (gameOver)
+        {
+            return;
+        }
         pauseMenuUI.SetActive(!pauseMenuUI.activeSelf);
 
         if (pauseMenuUI.activeSelf)
@@ -62,14 +73,22 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOver = true;
-        //gameOverUI.SetActive(true);
-
+        gameOverUI.SetActive(true);
+        if (gameOverUI.activeSelf)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public void Restart()
     {
         Pause();
         gameOver = false;
-        
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
+
     }
 }
