@@ -23,11 +23,12 @@ public class GameManager : MonoBehaviour
         {
             if (PlayerController.health <= 0 && !gameOver)
             {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    if (isPaused) Resume();
-                    else Pause();
-                }
+                GameOver();   
+            }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (isPaused) Resume();
+                else Pause();
             }
         }
     }
