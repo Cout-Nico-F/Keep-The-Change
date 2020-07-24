@@ -1,25 +1,40 @@
 fileFormatVersion: 2
-guid: b24ae929e93b4ae48a09128dd574485f
+guid: c24d228b77a5e054f9621664e3feb1c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5986896437173620542
-    second: PF-ataque_0
+      213: 2011563336360847222
+    second: characterdead1t_0
   - first:
-      213: -2490298975691008674
-    second: PF-ataque_1
+      213: -8717884237767202790
+    second: characterdead1t_1
   - first:
-      213: 5851578298381248870
-    second: PF-ataque_2
+      213: 8382083030387396777
+    second: characterdead1t_2
   - first:
-      213: 8579143334467757615
-    second: PF-ataque_3
+      213: -1228157062688649311
+    second: characterdead1t_3
   - first:
-      213: 6654724045234263336
-    second: PF-ataque_4
+      213: -7089222485048128082
+    second: characterdead1t_4
   - first:
-      213: 1297909691390307169
-    second: PF-ataque_5
+      213: 6927151648739203380
+    second: characterdead1t_5
+  - first:
+      213: -8962461109528748902
+    second: characterdead1t_6
+  - first:
+      213: 6010843880968076053
+    second: characterdead1t_7
+  - first:
+      213: -5447412207395307467
+    second: characterdead1t_8
+  - first:
+      213: -3380928465043992302
+    second: characterdead1t_9
+  - first:
+      213: -6092664273915432318
+    second: characterdead1t_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -84,7 +99,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -96,31 +111,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -129,7 +120,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PF-ataque_0
+      name: characterdead1t_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0f63b09654aeca0800000000000000
-      internalID: -5986896437173620542
+      spriteID: 677ecfa52328aeb10800000000000000
+      internalID: 2011563336360847222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PF-ataque_1
+      name: characterdead1t_1
       rect:
         serializedVersion: 2
         x: 32
@@ -164,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e551b69964ea07dd0800000000000000
-      internalID: -2490298975691008674
+      spriteID: a18a8ee997ad30780800000000000000
+      internalID: -8717884237767202790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PF-ataque_2
+      name: characterdead1t_2
       rect:
         serializedVersion: 2
         x: 64
@@ -185,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 669266a957bf43150800000000000000
-      internalID: 5851578298381248870
+      spriteID: 9a012102b14235470800000000000000
+      internalID: 8382083030387396777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PF-ataque_3
+      name: characterdead1t_3
       rect:
         serializedVersion: 2
         x: 96
@@ -206,50 +197,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f266c10986d3f0770800000000000000
-      internalID: 8579143334467757615
+      spriteID: 1af4e0698a5b4fee0800000000000000
+      internalID: -1228157062688649311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PF-ataque_4
+      name: characterdead1t_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 1
-        width: 20
-        height: 31
-      alignment: 9
-      pivot: {x: 0.47816736, y: 0.4820412}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 825507ac2445a5c50800000000000000
-      internalID: 6654724045234263336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PF-ataque_5
-      rect:
-        serializedVersion: 2
-        x: 130
+        x: 128
         y: 0
-        width: 27
-        height: 31
-      alignment: 9
-      pivot: {x: 0.5103093, y: 0.5029931}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16b2bd9dcf9130210800000000000000
-      internalID: 1297909691390307169
+      spriteID: ead8efcc5b50e9d90800000000000000
+      internalID: -7089222485048128082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4399c5019bf222060800000000000000
+      internalID: 6927151648739203380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c19452b11fe9380800000000000000
+      internalID: -8962461109528748902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bbe65b9aeca6350800000000000000
+      internalID: 6010843880968076053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53083118577e664b0800000000000000
+      internalID: -5447412207395307467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211db0659778411d0800000000000000
+      internalID: -3380928465043992302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characterdead1t_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282be898f12827ba0800000000000000
+      internalID: -6092664273915432318
       vertices: []
       indices: 
       edges: []
