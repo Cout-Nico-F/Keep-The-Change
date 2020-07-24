@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("current items : " + UIreference.GetItemType());
         this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
-        Destroy(UIreference.gameObject);
+        //Destroy(UIreference.gameObject);
     }
 
     public void SavePlayer()
