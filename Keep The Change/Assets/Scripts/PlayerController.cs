@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             health -= 10;
+            PushEnemy(collision);
             healthBar.fillAmount = health / startHealth;
         }
         this.HandleItemCollisions(collision);
@@ -111,6 +112,14 @@ public class PlayerController : MonoBehaviour
         //GlobalControl.Instance.Health = this.health;
         GlobalControl.Instance.LastSpeed = this.lastSpeed;
         //GlobalControl.Instance.Inventory = this.inventoryUI.GetInventory();
+    }
+
+    private void PushEnemy(Collider2D collision)
+    {
+        Rigidbody enemyRb = collision.gameObject.GetComponent<Rigidbody>();
+        Vector3 awayFromPlayer = collision.gameObject.transform.position - transform.position;
+        enemyRb.AddForce(awayFromPlayer * 2f, ForceMode.Impulse);
+        Debug.Log("Pushing enemy: " + collision.gameObject.name);
     }
 
 }
