@@ -21,6 +21,7 @@ public class SceneFader : MonoBehaviour
     }
     IEnumerator FadeIn()
     {
+      print("fade in...");
         float t = 1f;
         while (t>0f)
         {
@@ -47,6 +48,10 @@ public class SceneFader : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (colliderFadesTo.Equals("ShopInterior")) {
+          // store reference to player inventory
+          ReferenceUI.Instance.Inventory = ReferenceUI.Instance.InventoryUI.GetComponent<InventoryUI>().GetInventory();
+        }
         FadeTo(colliderFadesTo);
     }
 }
