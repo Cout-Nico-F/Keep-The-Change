@@ -15,17 +15,14 @@ public class InventoryUI : MonoBehaviour {
   private List<GameObject> itemSlotReferences;
 
   private void Awake() {
-    print("InventoryUI awake...");
     this.canvas = GameObject.FindGameObjectWithTag("Canvas");
     this.itemSlotTemplateResource = Resources.Load("itemSlotTemplate");
-    print("set itemSlotTemplateResource to : " + this.itemSlotTemplateResource);
     this.itemSlotReferences = new List<GameObject>();
     this.InitInventory();
   }
 
   private void InitInventory() {
     this.inventory = ReferenceUI.Instance.Inventory;
-    print("InventoryUI | this.inventory : " + this.inventory);
     this.RefreshInventoryItems();
   }
 
@@ -36,7 +33,6 @@ public class InventoryUI : MonoBehaviour {
 
     this.ClearItemSlotReferences();
 
-    Debug.Log("rebuilding : " + this.inventory.GetItems().Count + " items...");
     foreach (Item item in this.inventory.GetItems()) {
       this.DisplayItem(x, y, itemSlotCellSize, item);
       x++;

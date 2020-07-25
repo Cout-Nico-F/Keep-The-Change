@@ -22,13 +22,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Canvas canvas;
 
     private void Awake() {
-      Debug.Log("player awake..");
       this.InventoryUI = ReferenceUI.Instance.InventoryUI;
       if (ReferenceUI.Instance.Inventory != null) {
         this.InventoryUI.SetInventory( ReferenceUI.Instance.Inventory );
-        print("PlayerController | this.InventoryUI : " + this.InventoryUI);
-        print("ReferenceUI.Instance.Inventory | " + ReferenceUI.Instance.Inventory);
-        Debug.Log("inventory holds : " + this.InventoryUI.GetInventory().GetItems().Count + " items...");
         
         
         this.InventoryUI.RefreshInventoryItems();
@@ -107,7 +103,6 @@ public class PlayerController : MonoBehaviour
             i.e. if someone adds a new child to canvas this will break
             */
             canvas.transform.GetChild(3).gameObject.SetActive(true);
-            print("e letter enter : " + canvas.transform.GetChild(3).gameObject);
                      
         }
     }
