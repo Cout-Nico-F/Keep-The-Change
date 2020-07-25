@@ -31,6 +31,10 @@ public class ReferenceUI : MonoBehaviour {
   // quick way to make sure objects don't duplicate on re-entering main scene
   private Dictionary<string, bool> _dontDestroyObjects = new Dictionary<string, bool>();
   public Dictionary<string, bool> DontDestroyObjects { get { return _dontDestroyObjects; } set { _dontDestroyObjects = value; } }
+  [SerializeField]
+  private CraftingUI _craftingUI;
+  public CraftingUI CraftingUI { get { return _craftingUI; } set { _craftingUI = value; } }
+
   public void AddDontDestroyObject( string name ) {
     this._dontDestroyObjects.Add(name, true);
   }
