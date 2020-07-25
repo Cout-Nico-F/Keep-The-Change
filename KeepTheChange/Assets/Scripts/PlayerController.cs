@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private bool ItemInRange = false;
     private bool CanCraft = false;
     private bool CanHarvest = false;
+    private Interactable harvestInteractableRef = null;
     private ItemUI UIreference;
 
     [SerializeField] Canvas canvas;
@@ -50,8 +51,7 @@ public class PlayerController : MonoBehaviour
         }
         if(CanHarvest && Input.GetKeyDown(KeyCode.F)) 
         {
-          this.animator.Play("harvestTree");
-          
+          this.Harvest();
         }
         MovementVariables();
         }
@@ -114,8 +114,11 @@ public class PlayerController : MonoBehaviour
         canvas.transform.GetChild(3).gameObject.SetActive(true);
       }
       if (flag.Equals("CanHarvest")) {
+        Interactable interactable = collision.GetComponent<Interactable>();
         CanHarvest = true;
         canvas.transform.GetChild(4).gameObject.SetActive(true);
+        // store reference to the Interactable
+        harvestInteractableRef = interactable;
       }
     }
 
@@ -148,7 +151,8 @@ public class PlayerController : MonoBehaviour
         }
         if ( collision.CompareTag("Interactable") ) 
         {
-          string flag = collision.GetComponent<Interactable>().Flag;
+          Interactable interactable = collision.GetComponent<Interactable>();
+          string flag = interactable.Flag;
           if (flag.Equals("CanCraft")) {
             CanCraft = false;
             ReferenceUI.Instance.HideCraftingUI();
@@ -156,10 +160,34 @@ public class PlayerController : MonoBehaviour
           }
           if (flag.Equals("CanHarvest")) {
             CanHarvest = false;
+            // hide letter F
             canvas.transform.GetChild(4).gameObject.SetActive(false);
           }
         }
          
+    }
+
+    private void Harvest() {
+      print("harvesting...");
+      this.animator.Play("harvestTree");
+      // create item from interactableReference
+      Item item = new Item(harvestInteractableRef.spawnsItemType, 1);
+      print("  spawning item : " + item.ToString());
+
+      // create new game object
+      GameObject itemSpawn = new GameObject("item-sticks");
+      ItemUI itemUI = itemSpawn.AddComponent<ItemUI>();
+      itemUI.SetItemType( item.GetItemType() );
+      SpriteRenderer spriteRenderer = itemSpawn.AddComponent<SpriteRenderer>();
+      spriteRenderer.sprite = item.GetSprite();
+      BoxCollider2D boxCollider2D = itemSpawn.AddComponent<BoxCollider2D>();
+      boxCollider2D.isTrigger = true;
+      // quick way to do it , Find is expensive
+      itemSpawn.transform.position = harvestInteractableRef.Target.Find("ItemSpawnTarget").transform.position;
+      itemSpawn.transform.localScale += new Vector3(3, 3, 0);
+
+      itemSpawn.tag = "Item";
+      
     }
 
     private void Pick ()

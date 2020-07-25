@@ -28,6 +28,7 @@ public class Item {
       case ItemType.GreenShroom: return ItemAssets.Instance.GreenShroom;
       case ItemType.BrownShroom: return ItemAssets.Instance.BrownShroom;
       case ItemType.R_FirePotion: return ItemAssets.Instance.R_FirePotion;
+      case ItemType.Sticks: return ItemAssets.Instance.Sticks;
     }
   }
 

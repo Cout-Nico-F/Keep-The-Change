@@ -9190,6 +9190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Flag: CanHarvest
   Target: {fileID: 1920583039}
+  spawnsItemType: 11
 --- !u!61 &23767437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27348,6 +27349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Flag: Tree
   Target: {fileID: 0}
+  spawnsItemType: 0
 --- !u!4 &1217408455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3693201882875706404, guid: 3310c7f97431566408878ecb9575d6e5,
@@ -28049,8 +28051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1073f7e4baa884ca22fdd19a9993b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INV_OFFSET_X: 40
-  INV_OFFSET_Y: 200
+  INV_OFFSET_X: 120
+  INV_OFFSET_Y: 135
 --- !u!224 &1292659702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33455,6 +33457,7 @@ MonoBehaviour:
   brownShroom: {fileID: -6914702058438380672, guid: e35fb3a205ea0db4cae18c9fcea73a16,
     type: 3}
   r_FirePotion: {fileID: 0}
+  sticks: {fileID: 2636029223324595374, guid: 8a850f59881bdbf4980d2a458368831b, type: 3}
 --- !u!1001 &1598066042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101670,12 +101673,12 @@ PrefabInstance:
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.23
+      value: -4.38
       objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.16
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
