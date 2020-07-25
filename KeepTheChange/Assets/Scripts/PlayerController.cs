@@ -50,7 +50,8 @@ public class PlayerController : MonoBehaviour
         }
         if(CanHarvest && Input.GetKeyDown(KeyCode.F)) 
         {
-          print("start harvesting...");
+          this.animator.Play("harvestTree");
+          this.animator.StopPlayback();
         }
         MovementVariables();
         }
