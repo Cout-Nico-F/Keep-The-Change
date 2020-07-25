@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Transform T = ReferenceUI.Instance.MainCanvas.transform.Find("PauseMenu");
+        pauseMenuUI = T.gameObject;
         gameOver = false;
     }
 
