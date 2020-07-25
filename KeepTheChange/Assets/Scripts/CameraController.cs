@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] GameObject player; // GO for the camera to follow
-    [SerializeField] Vector3 offset; // offset for the Camera Following the GO
-    [SerializeField] bool followPlayer = false; // checkbox in the Inspector
-    [SerializeField] float setVolume;
-    [SerializeField] Vector3 moveScreenRight = new Vector3 (28,0,0);
+    [SerializeField] private GameObject player = null; // GO for the camera to follow
+    [SerializeField] private Vector3 offset = Vector3.zero; // offset for the Camera Following the GO
+    [SerializeField] private bool followPlayer = false; // checkbox in the Inspector
+    [SerializeField] private float setVolume = 0f;
+    [SerializeField] private Vector3 moveScreenRight = new Vector3 (28,0,0);
 
     void Start()
     {
