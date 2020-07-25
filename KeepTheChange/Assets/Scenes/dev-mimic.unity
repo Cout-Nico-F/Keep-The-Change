@@ -27748,7 +27748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1073f7e4baa884ca22fdd19a9993b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  INV_OFFSET_X: 0
+  INV_OFFSET_X: 40
   INV_OFFSET_Y: 200
 --- !u!224 &1292659702
 RectTransform:
