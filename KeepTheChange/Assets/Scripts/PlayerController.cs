@@ -21,6 +21,15 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Canvas canvas;
 
+    private void Awake() {
+      this.InventoryUI = ReferenceUI.Instance.InventoryUI;
+      if (ReferenceUI.Instance.Inventory != null) {
+        this.InventoryUI.SetInventory( ReferenceUI.Instance.Inventory );
+        
+        
+        this.InventoryUI.RefreshInventoryItems();
+      }
+    }
 
     private void Start()
     {
@@ -66,6 +75,13 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);//little performance trick (sqrmagnitude instead of magnitude)
     }
 
+    /*
+    @dev : 
+    this method calls HandleItemCollisions but OnTriggerExit2D calls nothing 
+    if you call 'HandleSomething' on some Enter method
+    you should be calling 'HandleSomethingWhatever' on some Exit method
+    without this it just adds confusion
+    */
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -82,7 +98,10 @@ public class PlayerController : MonoBehaviour
         {
             ItemInRange = true;
             UIreference = collision.GetComponent<ItemUI>();
-            Debug.Log("set ui reference to : " + UIreference);
+            /*
+            @dev dangerous to call by an array index
+            i.e. if someone adds a new child to canvas this will break
+            */
             canvas.transform.GetChild(3).gameObject.SetActive(true);
                      
         }
@@ -100,10 +119,8 @@ public class PlayerController : MonoBehaviour
 
     private void Pick ()
     {
-        Debug.Log("current items : " + UIreference.GetItemType());
         Item item = new Item(UIreference.GetItemType(), 1);
-        Debug.Log("item is : " + item);
-        this.inventoryUI.AddItem(new Item(UIreference.GetItemType(), 1));
+        this.inventoryUI.AddItem( item );
         Destroy(UIreference.gameObject);
     }
 

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a35d49a9b1a16d84685b81e7692c1102
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - swordSprite: {instanceID: 0}
+  - healthPotionSprite: {instanceID: 0}
+  - manaPotionSprite: {instanceID: 0}
+  - Wood: {instanceID: 0}
+  - PinkFruit: {instanceID: 0}
+  - GreenShroom: {instanceID: 0}
+  - RedShroom: {instanceID: 0}
+  - BrownShroom: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
