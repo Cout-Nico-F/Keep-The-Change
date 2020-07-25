@@ -39,6 +39,14 @@ public class ReferenceUI : MonoBehaviour {
     this._dontDestroyObjects.Add(name, true);
   }
 
+  public void ToggleCraftingUI() {
+    this._craftingUI.gameObject.SetActive(!this._craftingUI.gameObject.active);
+  }
+
+  public void HideCraftingUI() {
+    this._craftingUI.gameObject.SetActive(false);
+  }
+
   private void Awake() {
     this.InitInventory();
   }

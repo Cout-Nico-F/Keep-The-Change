@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI;
     private bool ItemInRange = false;
+    private bool CanCraft = false;
     private ItemUI UIreference;
     
 
@@ -47,6 +48,10 @@ public class PlayerController : MonoBehaviour
         {
             Pick();
         }
+        if(CanCraft && Input.GetKeyDown(KeyCode.E)) 
+        {
+          ReferenceUI.Instance.ToggleCraftingUI();
+        }
         MovementVariables();
         }
     }
@@ -77,22 +82,42 @@ public class PlayerController : MonoBehaviour
 
     /*
     @dev : 
+    there is another trigger somewhere that makes this get called twice.
+    leaving this as is for now but this double trigger enter call shouldn't happen.
+    @dev :
     this method calls HandleItemCollisions but OnTriggerExit2D calls nothing 
     if you call 'HandleSomething' on some Enter method
     you should be calling 'HandleSomethingWhatever' on some Exit method
-    without this it just adds confusion
+    without this just adds confusion
     */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if ( collision.gameObject.CompareTag("Enemy") )
         {
             health -= 10;
             healthBar.fillAmount = health / startHealth;
-            PushEnemy(collision);
+            PushEnemy( collision );
         }
-        this.HandleItemCollisions(collision);
+        this.HandleItemCollisions( collision );
+        if ( collision.gameObject.CompareTag("Interactable") ) 
+        {
+          this.HandleInteractableTriggerEnter( collision );
+        }
     }
 
+    private void HandleInteractableTriggerEnter(Collider2D collision) 
+    {
+      string flag = collision.GetComponent<Interactable>().Flag;
+      if (flag.Equals("CanCraft")) {
+        CanCraft = true;
+      }
+      print("PlayerController | flag : " + flag);
+    }
+
+    /*
+      @dev this method name is vague
+      i.e. this handles only TriggerEnter collision ... not Collider collisions or Exit collisions
+    */
     private void HandleItemCollisions(Collider2D collision) {
       if (collision.CompareTag("Item"))
         {
@@ -113,6 +138,14 @@ public class PlayerController : MonoBehaviour
         {
             ItemInRange = false;
             canvas.transform.GetChild(3).gameObject.SetActive(false);
+        }
+        if ( collision.CompareTag("Interactable") ) 
+        {
+          string flag = collision.GetComponent<Interactable>().Flag;
+          if (flag.Equals("CanCraft")) {
+            CanCraft = false;
+            ReferenceUI.Instance.HideCraftingUI();
+          }
         }
          
     }
