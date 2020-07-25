@@ -28,7 +28,13 @@ public class ReferenceUI : MonoBehaviour {
   public InventoryUI InventoryUI { get { return _inventoryUI; } }
   private Inventory _inventory;
   public Inventory Inventory { get { return _inventory; } set { _inventory = value; } }
-    
+  // quick way to make sure objects don't duplicate on re-entering main scene
+  private Dictionary<string, bool> _dontDestroyObjects = new Dictionary<string, bool>();
+  public Dictionary<string, bool> DontDestroyObjects { get { return _dontDestroyObjects; } set { _dontDestroyObjects = value; } }
+  public void AddDontDestroyObject( string name ) {
+    this._dontDestroyObjects.Add(name, true);
+  }
+
   private void Awake() {
     print("--[ ReferenceUI Init ]--");
     this.InitInventory();

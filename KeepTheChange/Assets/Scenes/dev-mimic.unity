@@ -24111,6 +24111,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5682856685564978785, guid: f677a7cf897eab045a79acc659d8b236,
+        type: 3}
+      propertyPath: m_Name
+      value: Fading
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f677a7cf897eab045a79acc659d8b236, type: 3}
 --- !u!1 &1005497694 stripped
@@ -24820,6 +24825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050997349}
   - component: {fileID: 1050997348}
+  - component: {fileID: 1050997350}
   m_Layer: 0
   m_Name: GlobalControl
   m_TagString: Untagged
@@ -24853,6 +24859,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050997350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050997347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af892aad7d3f044db46a0fd878c7614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1054400927
 GameObject:
   m_ObjectHideFlags: 0
