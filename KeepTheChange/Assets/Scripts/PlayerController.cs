@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth = 100f;
     public static float health;
     float lastSpeed;
-    [SerializeField] Image healthBar = null;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
@@ -95,7 +94,8 @@ public class PlayerController : MonoBehaviour
         if ( collision.gameObject.CompareTag("Enemy") )
         {
             health -= 10;
-            healthBar.fillAmount = health / startHealth;
+            print("healthbar is : " + ReferenceUI.Instance.GetHealthBarFill());
+            ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
             PushEnemy( collision );
         }
         this.HandleItemCollisions( collision );
@@ -108,6 +108,7 @@ public class PlayerController : MonoBehaviour
     private void HandleInteractableTriggerEnter(Collider2D collision) 
     {
       string flag = collision.GetComponent<Interactable>().Flag;
+      print("hello flag : " + flag);
       if (flag.Equals("CanCraft")) {
         CanCraft = true;
         canvas.transform.GetChild(3).gameObject.SetActive(true);
