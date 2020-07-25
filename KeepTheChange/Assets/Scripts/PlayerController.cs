@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float startSpeed = 5f;
-    [SerializeField] Animator animator;
+    [SerializeField] Animator animator = null;
     Vector2 movement;
-    [SerializeField] float startHealth;
+    [SerializeField] float startHealth = 100f;
     public static float health;
     float lastSpeed;
-    [SerializeField] Image healthBar;
+    [SerializeField] Image healthBar = null;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
-    [SerializeField] InventoryUI inventoryUI;
+    [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
     private bool CanCraft = false;
     private ItemUI UIreference;

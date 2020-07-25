@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] Animator animator;
+    [SerializeField] Animator animator = null;
 
     [Header("Enemy Stats")]
     //Enemy Stats
     [SerializeField] float moveSpeed = 5f;
     Rigidbody2D rb;
     float health;
-    [SerializeField] float startHealth;
-    [SerializeField] Image healthBar;
-    [SerializeField] GameObject enemyCanvas;
+    [SerializeField] float startHealth = 0f;
+    [SerializeField] Image healthBar = null;
+    [SerializeField] GameObject enemyCanvas = null;
 
     [Header("Enemy Pathing")]
     // Waypoints
@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
     bool returning = false;
 
     [Header("Enemy Targetting")]
-    [SerializeField] Transform player;
+    [SerializeField] Transform player = null;
     [SerializeField] float targettingRange = 10f;
     Vector2 movementDirection;
 

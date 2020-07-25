@@ -20,11 +20,11 @@ public class ReferenceUI : MonoBehaviour {
 
   // assign this in the inspector
   [SerializeField]
-  private Canvas _mainCanvas;
+  private Canvas _mainCanvas = null;
   public Canvas MainCanvas { get { return _mainCanvas; } }
   // _mainCanvas field is private with a public getter property to ensure it is read-only.
   [SerializeField]
-  private InventoryUI _inventoryUI;
+  private InventoryUI _inventoryUI = null;
   public InventoryUI InventoryUI { get { return _inventoryUI; } }
   private Inventory _inventory;
   public Inventory Inventory { get { return _inventory; } set { _inventory = value; } }
@@ -40,7 +40,7 @@ public class ReferenceUI : MonoBehaviour {
   }
 
   public void ToggleCraftingUI() {
-    this._craftingUI.gameObject.SetActive(!this._craftingUI.gameObject.active);
+    this._craftingUI.gameObject.SetActive(!this._craftingUI.gameObject.activeSelf);
   }
 
   public void HideCraftingUI() {

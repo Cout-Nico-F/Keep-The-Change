@@ -8,8 +8,8 @@ public class SceneFader : MonoBehaviour
 {
     [SerializeField] Image img;
     [SerializeField] float fadeSpeed = 1f;
-    [SerializeField] AnimationCurve curve;
-    [SerializeField] string colliderFadesTo;
+    [SerializeField] AnimationCurve curve = null;
+    [SerializeField] string colliderFadesTo = null;
     void Start() {
       StartCoroutine(FadeIn());
     }

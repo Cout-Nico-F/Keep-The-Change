@@ -8,7 +8,6 @@ public class CraftingUI : MonoBehaviour {
 
   private void Awake() {
     this.playerInventoryUI = ReferenceUI.Instance.InventoryUI;
-    playerInventoryUI.GetInventory().PrintItems();
   }
 
   private void Update() {

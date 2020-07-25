@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    [SerializeField] float fireRate;
+    [SerializeField] float fireRate = 0.75f;
     float nextFire;
-    [SerializeField] Transform fireSource;
-    [SerializeField] GameObject bullet;
+    [SerializeField] Transform fireSource = null;
+    [SerializeField] GameObject bullet = null;
     AudioSource audioSource;
     void Start()
     {

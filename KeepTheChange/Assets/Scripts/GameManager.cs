@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static bool gameOver;
     public static bool isPaused = false;
-    [SerializeField] GameObject pauseMenuUI;
-    [SerializeField] GameObject gameOverUI;
-    [SerializeField] SceneFader sceneFader;
+    [SerializeField] GameObject pauseMenuUI = null;
+    [SerializeField] GameObject gameOverUI = null;
+    [SerializeField] SceneFader sceneFader = null;
     [SerializeField] string menuScene = "MainMenu";
 
     void Start()
