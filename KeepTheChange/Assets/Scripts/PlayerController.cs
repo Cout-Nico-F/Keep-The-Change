@@ -110,6 +110,7 @@ public class PlayerController : MonoBehaviour
       string flag = collision.GetComponent<Interactable>().Flag;
       if (flag.Equals("CanCraft")) {
         CanCraft = true;
+        canvas.transform.GetChild(3).gameObject.SetActive(true);
       }
       print("PlayerController | flag : " + flag);
     }
@@ -126,6 +127,8 @@ public class PlayerController : MonoBehaviour
             /*
             @dev dangerous to call by an array index
             i.e. if someone adds a new child to canvas this will break
+            @dev this should probably be in some callable private method to show/hide the E
+            we have no way of knowing what some canvas transform child at index 3 is 
             */
             canvas.transform.GetChild(3).gameObject.SetActive(true);
                      
@@ -145,6 +148,7 @@ public class PlayerController : MonoBehaviour
           if (flag.Equals("CanCraft")) {
             CanCraft = false;
             ReferenceUI.Instance.HideCraftingUI();
+            canvas.transform.GetChild(3).gameObject.SetActive(false);
           }
         }
          
