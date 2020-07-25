@@ -3,6 +3,6 @@ using UnityEngine;
 public class Interactable : MonoBehaviour {
 
   [SerializeField] public string Flag;
-  [SerializeField] public Transform MyTarget;
+  [SerializeField] public Transform Target;
 
 }

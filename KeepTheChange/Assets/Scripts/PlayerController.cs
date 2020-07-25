@@ -15,9 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
     private bool CanCraft = false;
+    private bool CanHarvest = false;
     private ItemUI UIreference;
-    
-
 
     [SerializeField] Canvas canvas;
 
@@ -25,8 +24,6 @@ public class PlayerController : MonoBehaviour
       this.InventoryUI = ReferenceUI.Instance.InventoryUI;
       if (ReferenceUI.Instance.Inventory != null) {
         this.InventoryUI.SetInventory( ReferenceUI.Instance.Inventory );
-        
-        
         this.InventoryUI.RefreshInventoryItems();
       }
     }
@@ -50,6 +47,10 @@ public class PlayerController : MonoBehaviour
         if(CanCraft && Input.GetKeyDown(KeyCode.E)) 
         {
           ReferenceUI.Instance.ToggleCraftingUI();
+        }
+        if(CanHarvest && Input.GetKeyDown(KeyCode.F)) 
+        {
+          print("start harvesting...");
         }
         MovementVariables();
         }
@@ -94,7 +95,6 @@ public class PlayerController : MonoBehaviour
         if ( collision.gameObject.CompareTag("Enemy") )
         {
             health -= 10;
-            print("healthbar is : " + ReferenceUI.Instance.GetHealthBarFill());
             ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
             PushEnemy( collision );
         }
@@ -108,10 +108,13 @@ public class PlayerController : MonoBehaviour
     private void HandleInteractableTriggerEnter(Collider2D collision) 
     {
       string flag = collision.GetComponent<Interactable>().Flag;
-      print("hello flag : " + flag);
       if (flag.Equals("CanCraft")) {
         CanCraft = true;
         canvas.transform.GetChild(3).gameObject.SetActive(true);
+      }
+      if (flag.Equals("CanHarvest")) {
+        CanHarvest = true;
+        canvas.transform.GetChild(4).gameObject.SetActive(true);
       }
     }
 
@@ -150,6 +153,10 @@ public class PlayerController : MonoBehaviour
             ReferenceUI.Instance.HideCraftingUI();
             canvas.transform.GetChild(3).gameObject.SetActive(false);
           }
+          if (flag.Equals("CanHarvest")) {
+            CanHarvest = false;
+            canvas.transform.GetChild(4).gameObject.SetActive(false);
+          }
         }
          
     }
@@ -173,7 +180,6 @@ public class PlayerController : MonoBehaviour
         Rigidbody2D enemyRb = collision.gameObject.GetComponent<Rigidbody2D>();
         Vector2 awayFromPlayer = collision.gameObject.transform.position - transform.position;
         enemyRb.AddForce(awayFromPlayer * 1.5f, ForceMode2D.Impulse);
-        Debug.Log("Pushing enemy: " + collision.gameObject.name);
     }
 
 }
