@@ -7,7 +7,7 @@ public class CraftingUI : MonoBehaviour {
   private InventoryUI playerInventoryUI;
 
   private void Awake() {
-    this.playerInventoryUI = this.player.GetComponent<PlayerController>().InventoryUI;
+    this.playerInventoryUI = ReferenceUI.Instance.InventoryUI;
     playerInventoryUI.GetInventory().PrintItems();
   }
 
