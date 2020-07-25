@@ -112,7 +112,6 @@ public class PlayerController : MonoBehaviour
         CanCraft = true;
         canvas.transform.GetChild(3).gameObject.SetActive(true);
       }
-      print("PlayerController | flag : " + flag);
     }
 
     /*
