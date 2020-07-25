@@ -11,14 +11,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth = 100f;
     public static float health;
     float lastSpeed;
-    [SerializeField] Image healthBar = null;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
     private bool CanCraft = false;
+    private bool CanHarvest = false;
+    private Interactable harvestInteractableRef = null;
     private ItemUI UIreference;
-    
-
 
     [SerializeField] Canvas canvas;
 
@@ -26,8 +25,6 @@ public class PlayerController : MonoBehaviour
       this.InventoryUI = ReferenceUI.Instance.InventoryUI;
       if (ReferenceUI.Instance.Inventory != null) {
         this.InventoryUI.SetInventory( ReferenceUI.Instance.Inventory );
-        
-        
         this.InventoryUI.RefreshInventoryItems();
       }
     }
@@ -51,6 +48,10 @@ public class PlayerController : MonoBehaviour
         if(CanCraft && Input.GetKeyDown(KeyCode.E)) 
         {
           ReferenceUI.Instance.ToggleCraftingUI();
+        }
+        if(CanHarvest && Input.GetKeyDown(KeyCode.F)) 
+        {
+          this.Harvest();
         }
         MovementVariables();
         }
@@ -95,7 +96,7 @@ public class PlayerController : MonoBehaviour
         if ( collision.gameObject.CompareTag("Enemy") )
         {
             health -= 10;
-            healthBar.fillAmount = health / startHealth;
+            ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
             PushEnemy( collision );
         }
         this.HandleItemCollisions( collision );
@@ -111,6 +112,13 @@ public class PlayerController : MonoBehaviour
       if (flag.Equals("CanCraft")) {
         CanCraft = true;
         canvas.transform.GetChild(3).gameObject.SetActive(true);
+      }
+      if (flag.Equals("CanHarvest")) {
+        Interactable interactable = collision.GetComponent<Interactable>();
+        CanHarvest = true;
+        canvas.transform.GetChild(4).gameObject.SetActive(true);
+        // store reference to the Interactable
+        harvestInteractableRef = interactable;
       }
     }
 
@@ -143,14 +151,43 @@ public class PlayerController : MonoBehaviour
         }
         if ( collision.CompareTag("Interactable") ) 
         {
-          string flag = collision.GetComponent<Interactable>().Flag;
+          Interactable interactable = collision.GetComponent<Interactable>();
+          string flag = interactable.Flag;
           if (flag.Equals("CanCraft")) {
             CanCraft = false;
             ReferenceUI.Instance.HideCraftingUI();
             canvas.transform.GetChild(3).gameObject.SetActive(false);
           }
+          if (flag.Equals("CanHarvest")) {
+            CanHarvest = false;
+            // hide letter F
+            canvas.transform.GetChild(4).gameObject.SetActive(false);
+          }
         }
          
+    }
+
+    private void Harvest() {
+      print("harvesting...");
+      this.animator.Play("harvestTree");
+      // create item from interactableReference
+      Item item = new Item(harvestInteractableRef.spawnsItemType, 1);
+      print("  spawning item : " + item.ToString());
+
+      // create new game object
+      GameObject itemSpawn = new GameObject("item-sticks");
+      ItemUI itemUI = itemSpawn.AddComponent<ItemUI>();
+      itemUI.SetItemType( item.GetItemType() );
+      SpriteRenderer spriteRenderer = itemSpawn.AddComponent<SpriteRenderer>();
+      spriteRenderer.sprite = item.GetSprite();
+      BoxCollider2D boxCollider2D = itemSpawn.AddComponent<BoxCollider2D>();
+      boxCollider2D.isTrigger = true;
+      // quick way to do it , Find is expensive
+      itemSpawn.transform.position = harvestInteractableRef.Target.Find("ItemSpawnTarget").transform.position;
+      itemSpawn.transform.localScale += new Vector3(3, 3, 0);
+
+      itemSpawn.tag = "Item";
+      
     }
 
     private void Pick ()
@@ -172,7 +209,6 @@ public class PlayerController : MonoBehaviour
         Rigidbody2D enemyRb = collision.gameObject.GetComponent<Rigidbody2D>();
         Vector2 awayFromPlayer = collision.gameObject.transform.position - transform.position;
         enemyRb.AddForce(awayFromPlayer * 1.5f, ForceMode2D.Impulse);
-        Debug.Log("Pushing enemy: " + collision.gameObject.name);
     }
 
 }

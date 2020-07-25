@@ -28,8 +28,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform player = null;
     [SerializeField] float targettingRange = 10f;
     Vector2 movementDirection;
-
-   
+    private bool shouldFollow = true;
+    private float attackDistance = 2f;
 
     void Start()
     {
@@ -42,6 +42,10 @@ public class EnemyController : MonoBehaviour
     {
         SetDirectionToTarget();
         SetDirectionToWaypoint();
+
+        if (!shouldFollow && Vector2.Distance(player.position, transform.position) > targettingRange) {
+          shouldFollow = true;
+        }
 
         if (patrolling || returning)
         {
@@ -107,8 +111,14 @@ public class EnemyController : MonoBehaviour
     }
     void MoveToTarget(Vector2 direction)
     {
-        if(Vector2.Distance(player.position , transform.position) > 0.1f) //tal vez podemos poner aca un tipo de ataque ( como cuando este a cierta distancia un dash y un rebote hacia atras para volver a hacer el dash
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        float distanceFromPlayer = Vector2.Distance(player.position , transform.position);
+        if( distanceFromPlayer > 0.1f && shouldFollow) {
+          rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        }
+        if(distanceFromPlayer <= attackDistance && shouldFollow ) {
+          // attack animation / etc.
+          shouldFollow = false;
+        }
     }
     void MoveToWaypoint(Vector2 waypointDirection)
     {

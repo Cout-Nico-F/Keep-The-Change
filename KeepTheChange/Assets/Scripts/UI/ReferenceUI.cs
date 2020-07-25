@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ReferenceUI : MonoBehaviour {
 
@@ -45,6 +46,11 @@ public class ReferenceUI : MonoBehaviour {
 
   public void HideCraftingUI() {
     this._craftingUI.gameObject.SetActive(false);
+  }
+
+  public Image GetHealthBarFill() {
+    //@dev Find expensive should only call once
+    return this._mainCanvas.transform.Find("HealthBar").Find("Bar Fill").GetComponent<Image>();
   }
 
   private void Awake() {
