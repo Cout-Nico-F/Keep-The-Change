@@ -35,11 +35,14 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float attackDistance = 0.25f;
     [SerializeField] float enemyDamage = 10;
     private bool canAttack = false;
+    AudioSource audioSource;
 
     void Start()
     {
         health = startHealth;
         rb = this.GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -165,9 +168,9 @@ public class EnemyController : MonoBehaviour
             if (Time.time > nextAttack)
             {
                 nextAttack = Time.time + attackRate;
-            PlayerController _player = player.GetComponent<PlayerController>();
-            _player.Damage(enemyDamage);
-                //Play Attack Audio
+                PlayerController _player = player.GetComponent<PlayerController>();
+                _player.Damage(enemyDamage);
+                audioSource.Play();
                 //Set trigger for attack animation
             }
         }
