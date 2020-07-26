@@ -48,12 +48,22 @@ public class ReferenceUI : MonoBehaviour {
     this._craftingUI.gameObject.SetActive(false);
   }
 
-  public Image GetHealthBarFill() {
-    //@dev Find expensive should only call once
-    return this._mainCanvas.transform.Find("HealthBar").Find("Bar Fill").GetComponent<Image>();
-  }
+    public Image GetHealthBarFill()
+    {
+        //@dev Find expensive should only call once
+        return this._mainCanvas.transform.Find("HealthBar").Find("Bar Fill").GetComponent<Image>();
+    }
+
+    public Image GetEnergyBarFill()
+    {
+        //@dev Find expensive should only call once
+        return this._mainCanvas.transform.Find("EnergyBar").Find("Bar Fill").GetComponent<Image>();
+    }
+
+
 
   private void Awake() {
+    private void Awake() {
     this.InitInventory();
   }
 

@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float startHealth = 100f;
     public static float health;
     float lastSpeed;
+    public float startEnergy = 18000f;
+    float energy;
     public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
     [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         health = startHealth;
         lastSpeed = startSpeed;
-
+        energy = startEnergy;
         this.canvas = ReferenceUI.Instance.MainCanvas;
         canvas.transform.GetChild(3).gameObject.SetActive(false);
     }
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
           this.Harvest();
         }
         MovementVariables();
+            EnergyDrain();
         }
     }
     private void FixedUpdate()
@@ -209,5 +212,11 @@ public class PlayerController : MonoBehaviour
     {
         health -= damage;
         ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
+    }
+
+    void EnergyDrain()
+    {
+        energy -= 1;
+        ReferenceUI.Instance.GetEnergyBarFill().fillAmount = energy / startEnergy;
     }
 }
