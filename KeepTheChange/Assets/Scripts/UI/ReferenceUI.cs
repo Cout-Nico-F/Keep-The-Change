@@ -62,7 +62,6 @@ public class ReferenceUI : MonoBehaviour {
 
 
 
-  private void Awake() {
     private void Awake() {
     this.InitInventory();
   }
