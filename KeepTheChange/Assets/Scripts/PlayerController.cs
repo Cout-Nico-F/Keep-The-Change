@@ -93,12 +93,6 @@ public class PlayerController : MonoBehaviour
     */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ( collision.gameObject.CompareTag("Enemy") )
-        {
-            health -= 10;
-            ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
-            PushEnemy( collision );
-        }
         this.HandleItemCollisions( collision );
         if ( collision.gameObject.CompareTag("Interactable") ) 
         {
@@ -211,4 +205,9 @@ public class PlayerController : MonoBehaviour
         enemyRb.AddForce(awayFromPlayer * 1.5f, ForceMode2D.Impulse);
     }
 
+    public void Damage(float damage)
+    {
+        health -= damage;
+        ReferenceUI.Instance.GetHealthBarFill().fillAmount = health / startHealth;
+    }
 }

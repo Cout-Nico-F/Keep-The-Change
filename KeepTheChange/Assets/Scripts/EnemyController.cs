@@ -26,10 +26,14 @@ public class EnemyController : MonoBehaviour
 
     [Header("Enemy Targetting")]
     [SerializeField] Transform player = null;
+    [SerializeField] Vector3 colliderOffset;
     [SerializeField] float targettingRange = 10f;
     Vector2 movementDirection;
-    private bool shouldFollow = true;
-    private float attackDistance = 2f;
+    [Header("Enemy Attacking")]
+    float nextAttack;
+    [SerializeField] float attackRate = 1.0f;
+    [SerializeField] float attackDistance = 0.25f;
+    private bool canAttack = false;
 
     void Start()
     {
@@ -42,11 +46,7 @@ public class EnemyController : MonoBehaviour
     {
         SetDirectionToTarget();
         SetDirectionToWaypoint();
-
-        if (!shouldFollow && Vector2.Distance(player.position, transform.position) > targettingRange) {
-          shouldFollow = true;
-        }
-
+        Attack();
         if (patrolling || returning)
         {
             animator.SetFloat("Vertical", waypointDirection.y);
@@ -74,7 +74,7 @@ public class EnemyController : MonoBehaviour
     {
         if (player != null)
         {
-            Vector2 direction = player.position - transform.position;
+            Vector2 direction = (player.position + colliderOffset) - transform.position;
             direction.Normalize();
             movementDirection = direction;
 
@@ -112,12 +112,8 @@ public class EnemyController : MonoBehaviour
     void MoveToTarget(Vector2 direction)
     {
         float distanceFromPlayer = Vector2.Distance(player.position , transform.position);
-        if( distanceFromPlayer > 0.1f && shouldFollow) {
+        if( distanceFromPlayer > attackDistance) {
           rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
-        }
-        if(distanceFromPlayer <= attackDistance && shouldFollow ) {
-          // attack animation / etc.
-          shouldFollow = false;
         }
     }
     void MoveToWaypoint(Vector2 waypointDirection)
@@ -140,11 +136,41 @@ public class EnemyController : MonoBehaviour
         moveSpeed -= 1;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            canAttack = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            canAttack = false;
+        }
+    }
     private void Die ()
     {
         animator.Play("die");
         moveSpeed = 0;
         Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject, 1.33f);
+    }
+
+    private void Attack()
+    {
+        if (canAttack)
+        {
+            if (Time.time > nextAttack)
+            {
+                nextAttack = Time.time + attackRate;
+            PlayerController _player = player.GetComponent<PlayerController>();
+            _player.Damage(10);
+                //Play Attack Audio
+                //Set trigger for attack animation
+            }
+        }
     }
 }
