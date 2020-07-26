@@ -29,19 +29,16 @@ public class GameManager : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (isPaused) Resume();
-                else Pause();
+                Pause();
+            }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                GameOver();
             }
         }
     }
 
-    public void Resume()
-    {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        isPaused = false;
-    }
-
+  
     public void Pause()
     {
         //pauseMenuUI.SetActive(true);
@@ -82,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        //Debug.Log("WTF");
+        Debug.Log("Test");
         Pause();
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }

@@ -27470,12 +27470,7 @@ PrefabInstance:
     - target: {fileID: 5682856683962309044, guid: f677a7cf897eab045a79acc659d8b236,
         type: 3}
       propertyPath: m_Name
-      value: Scene Fader
-      objectReference: {fileID: 0}
-    - target: {fileID: 5682856683962309044, guid: f677a7cf897eab045a79acc659d8b236,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: SceneFader
       objectReference: {fileID: 0}
     - target: {fileID: 5682856683962309046, guid: f677a7cf897eab045a79acc659d8b236,
         type: 3}
