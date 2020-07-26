@@ -28,21 +28,5 @@ public class ItemAssets : MonoBehaviour {
   [SerializeField] Sprite r_FirePotion;
   public Sprite Sticks { get { return sticks; } private set { sticks = value;}}
   [SerializeField] Sprite sticks;
-  public Sprite Apple { get { return apple; } private set { apple = value; } }
-  [SerializeField] Sprite apple;
-  public Sprite Pumpkin { get { return pumpkin; } private set { pumpkin = value; } }
-  [SerializeField] Sprite pumpkin;
-  public Sprite Raw_PinkGem { get { return raw_pinkgem; } private set { raw_pinkgem = value; } }
-  [SerializeField] Sprite raw_pinkgem;
-  public Sprite Raw_GreenGem { get { return raw_greengem; } private set { raw_greengem = value; } }
-  [SerializeField] Sprite raw_greengem;
-  public Sprite Raw_blueGem { get { return raw_bluegem; } private set { raw_bluegem = value; } }
-  [SerializeField] Sprite raw_bluegem;
-  public Sprite DoubleShroom { get { return doubleshroom; } private set { doubleshroom = value; } }
-  [SerializeField] Sprite doubleshroom;
-  public Sprite Rock { get { return rock; } private set { rock = value; } }
-  [SerializeField] Sprite rock;
-  public Sprite FruitStick { get { return fruitstick; } private set { fruitstick = value; } }
-  [SerializeField] Sprite fruitstick;
 
 }
