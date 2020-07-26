@@ -135,18 +135,16 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("hit");
         moveSpeed -= 1;
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             canAttack = true;
         }
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+       if (collision.gameObject.CompareTag("Player"))
         {
             canAttack = false;
         }

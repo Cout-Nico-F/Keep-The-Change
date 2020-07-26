@@ -182,10 +182,10 @@ MonoBehaviour:
   pointB: {x: 25, y: 12, z: 0}
   patrolling: 0
   player: {fileID: 0}
-  colliderOffset: {x: 0, y: -0.6, z: 0}
+  colliderOffset: {x: 0, y: -0.7, z: 0}
   targettingRange: 4
   attackRate: 1
-  attackDistance: 0.2
+  attackDistance: 0.1
 --- !u!50 &4981810191987614437
 Rigidbody2D:
   serializedVersion: 4
@@ -236,7 +236,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.11839962}

@@ -29753,6 +29753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCanvas: {fileID: 1369369608}
+  _inventoryUI: {fileID: 0}
+  _craftingUI: {fileID: 0}
 --- !u!4 &1345162726
 Transform:
   m_ObjectHideFlags: 0
@@ -33640,6 +33642,7 @@ MonoBehaviour:
   redShroom: {fileID: 0}
   brownShroom: {fileID: 0}
   r_FirePotion: {fileID: 0}
+  sticks: {fileID: 0}
 --- !u!1001 &1598066042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101823,6 +101826,11 @@ PrefabInstance:
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 1292659701}
+    - target: {fileID: 2468011369179351191, guid: 13a638a3f54177d418e316a3d19e16c3,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2468011369179351193, guid: 13a638a3f54177d418e316a3d19e16c3,
         type: 3}
       propertyPath: m_LocalPosition.x
