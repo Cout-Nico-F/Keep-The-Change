@@ -33,6 +33,7 @@ public class EnemyController : MonoBehaviour
     float nextAttack;
     [SerializeField] float attackRate = 1.0f;
     [SerializeField] float attackDistance = 0.25f;
+    [SerializeField] float enemyDamage = 10;
     private bool canAttack = false;
 
     void Start()
@@ -165,7 +166,7 @@ public class EnemyController : MonoBehaviour
             {
                 nextAttack = Time.time + attackRate;
             PlayerController _player = player.GetComponent<PlayerController>();
-            _player.Damage(10);
+            _player.Damage(enemyDamage);
                 //Play Attack Audio
                 //Set trigger for attack animation
             }
