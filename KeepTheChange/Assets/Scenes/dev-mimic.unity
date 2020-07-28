@@ -17415,7 +17415,7 @@ GameObject:
   - component: {fileID: 617069947}
   - component: {fileID: 617069946}
   m_Layer: 5
-  m_Name: PressKey_ImageF
+  m_Name: PressKey_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25276,34 +25276,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f677a7cf897eab045a79acc659d8b236, type: 3}
---- !u!1 &1005497694 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5682856683962309044, guid: f677a7cf897eab045a79acc659d8b236,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005497693}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1005497695 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5682856683962309047, guid: f677a7cf897eab045a79acc659d8b236,
     type: 3}
   m_PrefabInstance: {fileID: 1005497693}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005497694}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab67365af2808fa4a884a645b823972c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1005497696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005497694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af892aad7d3f044db46a0fd878c7614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1005497697 stripped
@@ -25312,24 +25294,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1005497693}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1005497698 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5682856685564978785, guid: f677a7cf897eab045a79acc659d8b236,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005497693}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1005497699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005497698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6af892aad7d3f044db46a0fd878c7614, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1010589184
 GameObject:
   m_ObjectHideFlags: 0
@@ -98830,7 +98794,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1005497693}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005497698}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -103189,7 +103153,7 @@ GameObject:
   - component: {fileID: 2107607577}
   - component: {fileID: 2107607576}
   m_Layer: 5
-  m_Name: PressKey_Image
+  m_Name: PressKey_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

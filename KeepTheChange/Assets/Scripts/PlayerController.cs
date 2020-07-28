@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private ItemUI UIreference;
 
     [SerializeField] Canvas canvas;
+    [SerializeField] private GameObject obj_E;
+    [SerializeField] private GameObject obj_F;
 
     private void Awake() {
       this.InventoryUI = ReferenceUI.Instance.InventoryUI;
@@ -37,7 +39,11 @@ public class PlayerController : MonoBehaviour
         lastSpeed = startSpeed;
         energy = startEnergy;
         this.canvas = ReferenceUI.Instance.MainCanvas;
-        canvas.transform.GetChild(3).gameObject.SetActive(false);
+        this.obj_E = canvas.transform.Find("PressKey_E").gameObject;
+        this.obj_F = canvas.transform.Find("PressKey_F").gameObject;
+
+        //Fix//canvas.transform.GetChild(3).gameObject.SetActive(false);
+        canvas.transform.Find("PressKey_E").gameObject.SetActive(false);
     }
     void Update()
     {
@@ -108,14 +114,16 @@ public class PlayerController : MonoBehaviour
       string flag = collision.GetComponent<Interactable>().Flag;
       if (flag.Equals("CanCraft")) {
         CanCraft = true;
-        canvas.transform.GetChild(3).gameObject.SetActive(true);
-      }
+        //canvas.transform.GetChild(3).gameObject.SetActive(true);
+        canvas.transform.Find("PressKey_E").gameObject.SetActive(true);
+        }
       if (flag.Equals("CanHarvest")) {
         Interactable interactable = collision.GetComponent<Interactable>();
         CanHarvest = true;
-        canvas.transform.GetChild(4).gameObject.SetActive(true);
-        // store reference to the Interactable
-        harvestInteractableRef = interactable;
+        //canvas.transform.GetChild(4).gameObject.SetActive(true);
+        canvas.transform.Find("PressKey_F").gameObject.SetActive(true);
+            // store reference to the Interactable
+            harvestInteractableRef = interactable;
       }
     }
 
@@ -134,7 +142,8 @@ public class PlayerController : MonoBehaviour
             @dev this should probably be in some callable private method to show/hide the E
             we have no way of knowing what some canvas transform child at index 3 is 
             */
-            canvas.transform.GetChild(3).gameObject.SetActive(true);
+            //Fix//canvas.transform.GetChild(3).gameObject.SetActive(true);
+            canvas.transform.Find("PressKey_E").gameObject.SetActive(true);
                      
         }
     }
@@ -144,7 +153,8 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Item"))
         {
             ItemInRange = false;
-            canvas.transform.GetChild(3).gameObject.SetActive(false);
+            //Fix//canvas.transform.GetChild(3).gameObject.SetActive(false);
+            canvas.transform.Find("PressKey_E").gameObject.SetActive(false);
         }
         if ( collision.CompareTag("Interactable") ) 
         {
@@ -153,13 +163,15 @@ public class PlayerController : MonoBehaviour
           if (flag.Equals("CanCraft")) {
             CanCraft = false;
             ReferenceUI.Instance.HideCraftingUI();
-            canvas.transform.GetChild(3).gameObject.SetActive(false);
-          }
+            //Fix//canvas.transform.GetChild(3).gameObject.SetActive(false);
+            canvas.transform.Find("PressKey_E").gameObject.SetActive(false);
+            }
           if (flag.Equals("CanHarvest")) {
             CanHarvest = false;
             // hide letter F
-            canvas.transform.GetChild(4).gameObject.SetActive(false);
-          }
+            //Fix//canvas.transform.GetChild(4).gameObject.SetActive(false);
+            canvas.transform.Find("PressKey_F").gameObject.SetActive(false);
+            }
         }
          
     }
