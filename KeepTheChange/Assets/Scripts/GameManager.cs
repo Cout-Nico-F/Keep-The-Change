@@ -81,7 +81,9 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Debug.Log("Test");
-        Pause();
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
+        gameOver = false;
+        gameOverUI.SetActive(false);
+
     }
 }
