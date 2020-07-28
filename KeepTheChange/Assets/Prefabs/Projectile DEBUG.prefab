@@ -45,8 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ca64e25cfde8644a840940de5b7ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startLifetime: 0.1
   speed: 15
   damage: 34
+  particleSystem: {fileID: 4394141084265754440, guid: 3214ce86b8d93544db6f98c446590d11,
+    type: 3}
 --- !u!212 &-261668588684663387
 SpriteRenderer:
   m_ObjectHideFlags: 0

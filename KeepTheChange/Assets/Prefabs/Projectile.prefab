@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  damage: 34
+  particleSystem: {fileID: 4394141084265754440, guid: 3214ce86b8d93544db6f98c446590d11,
+    type: 3}
 --- !u!212 &-261668588684663387
 SpriteRenderer:
   m_ObjectHideFlags: 0

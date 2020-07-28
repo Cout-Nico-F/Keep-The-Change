@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     float range = 0.5f;
     [SerializeField] float speed = 5.0f;
     [SerializeField] float damage = 34;
+    [SerializeField] ParticleSystem particleSystem;
     void Start()
     {
         target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -17,7 +18,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, range);
 
     }
-
+    
     void Update()
     {
         float step = speed * Time.deltaTime;
@@ -30,7 +31,7 @@ public class Projectile : MonoBehaviour
         {
             //llamar al metodo hit del enemy golpeado 
             collision.gameObject.GetComponent<EnemyController>().Hit(damage);
-            
+            GameObject.Instantiate(particleSystem,transform.position,transform.rotation);
             Destroy(gameObject);
         }
     }
