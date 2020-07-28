@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
     {
         Pause();
         sceneFader.FadeTo(menuScene);
+        gameOverUI.SetActive(false);
     }
     public void QuitGame()
     {
