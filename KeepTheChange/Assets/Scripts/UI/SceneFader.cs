@@ -19,6 +19,11 @@ public class SceneFader : MonoBehaviour
         StartCoroutine(FadeOut(scene));
     }
 
+    private Image GetFaderImage()
+    {
+        return GameObject.Find("Fading").GetComponent<Image>();
+    }
+
     IEnumerator FadeIn()
     {
         float t = 1f;
@@ -26,7 +31,7 @@ public class SceneFader : MonoBehaviour
         {
             t -= Time.deltaTime * fadeSpeed;
             float a = curve.Evaluate(t);
-            img.color = new Color(0f, 0f, 0f, a);
+            this.GetFaderImage().color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
     }
@@ -38,7 +43,7 @@ public class SceneFader : MonoBehaviour
         {
             t += Time.deltaTime * fadeSpeed;
             float a = curve.Evaluate(t);
-            img.color = new Color(0f, 0f, 0f, a);
+            this.GetFaderImage().color = new Color(0f, 0f, 0f, a);
             yield return 0;
         }
         SceneManager.LoadScene(scene);
