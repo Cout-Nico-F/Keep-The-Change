@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 0}
   gameOverUI: {fileID: 0}
-  sceneFader: {fileID: 0}
+  sceneFader: {fileID: 1916664450}
   menuScene: MainMenu
 --- !u!4 &1031622020
 Transform:
@@ -6729,6 +6729,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916664450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5682856683962309047, guid: f677a7cf897eab045a79acc659d8b236,
+    type: 3}
+  m_PrefabInstance: {fileID: 558848198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab67365af2808fa4a884a645b823972c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1926331654
 GameObject:
   m_ObjectHideFlags: 0
