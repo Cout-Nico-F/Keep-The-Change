@@ -9,7 +9,6 @@ public class SceneFader : MonoBehaviour
     [SerializeField] float fadeSpeed = 1f;
     [SerializeField] AnimationCurve curve = null;
     [SerializeField] string colliderFadesTo = null;
-
     void Start()
     {
         StartCoroutine(FadeIn());
@@ -18,7 +17,6 @@ public class SceneFader : MonoBehaviour
     public void FadeTo(string scene)
     {
         StartCoroutine(FadeOut(scene));
-        StartCoroutine(FadeIn());
     }
 
     IEnumerator FadeIn()
