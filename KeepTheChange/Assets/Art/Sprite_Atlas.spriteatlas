@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 10102c88b40fe104db9fa297fa954291, type: 3}
-    totalSpriteSurfaceArea: 7504367
+    totalSpriteSurfaceArea: 8417641
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -402,6 +402,7 @@ SpriteAtlas:
   - {fileID: -1515212064166571470, guid: 0ea9e3b50f92efd4fb4d61b1f802ea68, type: 3}
   - {fileID: 21300000, guid: 540d55f57fdf5af4ba1edcb4758a3418, type: 3}
   - {fileID: 21300000, guid: d722fcf5465ccd14e97f771fe389ea30, type: 3}
+  - {fileID: 21300000, guid: 66223006a3985d5468cc93e0b049d63d, type: 3}
   - {fileID: 21300000, guid: f7840d1620c45d940b995dfc6b773cf4, type: 3}
   - {fileID: 21300000, guid: 3094035677ed52141b70e3f8c311cd48, type: 3}
   - {fileID: 21300000, guid: 41f954567595534409ab4ca5c312c668, type: 3}
@@ -568,6 +569,7 @@ SpriteAtlas:
   - {fileID: 21300036, guid: 7da1032bc736a3547bfb641681e5df22, type: 3}
   - {fileID: 21300000, guid: 57b0562b9bf93c544896d971c288e6d8, type: 3}
   - {fileID: 21300000, guid: 14a9b03bb904fb04db4dba0405cd9248, type: 3}
+  - {fileID: 21300000, guid: 65fdb74bf31bf6e46b00ed26ebf37924, type: 3}
   - {fileID: 21300000, guid: ec080b7b19ff28f47881b9351a684b29, type: 3}
   - {fileID: 21300000, guid: f08dce7b0b4decf408dc66b4cd41aad6, type: 3}
   - {fileID: -5447412207395307467, guid: c24d228b77a5e054f9621664e3feb1c1, type: 3}
@@ -1241,6 +1243,7 @@ SpriteAtlas:
   - Lilypad-waterdecoration32x32_2
   - 16x16items-harvestable
   - piedra+tronco16x16
+  - tittlescreenbkxResize
   - resume-botton
   - untiledeagua
   - stafflittle
@@ -1407,6 +1410,7 @@ SpriteAtlas:
   - PlaceHolder_Items_18
   - render.png_48
   - render.png_43
+  - cursor
   - tilepared2-16x16
   - inventory-background
   - characterdead1t_8
