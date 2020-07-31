@@ -24,12 +24,12 @@ public class ReferenceUI : MonoBehaviour {
   private Canvas _mainCanvas = null;
   public Canvas MainCanvas { get { return _mainCanvas; } }
   // _mainCanvas field is private with a public getter property to ensure it is read-only.
-  [SerializeField]
+ /* [SerializeField]
   private InventoryUI _inventoryUI = null;
   public InventoryUI InventoryUI { get { return _inventoryUI; } }
   private Inventory _inventory;
   public Inventory Inventory { get { return _inventory; } set { _inventory = value; } }
-  // quick way to make sure objects don't duplicate on re-entering main scene
+ */ // quick way to make sure objects don't duplicate on re-entering main scene
   private Dictionary<string, bool> _dontDestroyObjects = new Dictionary<string, bool>();
   public Dictionary<string, bool> DontDestroyObjects { get { return _dontDestroyObjects; } set { _dontDestroyObjects = value; } }
   [SerializeField]
@@ -61,7 +61,7 @@ public class ReferenceUI : MonoBehaviour {
     }
 
 
-
+/*
     private void Awake() {
     this.InitInventory();
   }
@@ -70,5 +70,5 @@ public class ReferenceUI : MonoBehaviour {
     Inventory inv = new Inventory();
     this._inventory = inv;
   }
-
+*/
 }

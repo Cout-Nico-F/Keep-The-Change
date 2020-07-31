@@ -13,26 +13,26 @@ public class PlayerController : MonoBehaviour
     float lastSpeed;
     public float startEnergy = 18000f;
     float energy;
-    public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
-    [SerializeField] InventoryUI inventoryUI = null;
+   // public InventoryUI InventoryUI { get { return inventoryUI; } private set { inventoryUI = value; }}
+   // [SerializeField] InventoryUI inventoryUI = null;
     private bool ItemInRange = false;
     private bool CanCraft = false;
     private bool CanHarvest = false;
     private Interactable harvestInteractableRef = null;
-    private ItemUI UIreference;
+   // private ItemUI UIreference;
 
     [SerializeField] Canvas canvas;
     [SerializeField] private GameObject obj_E;
     [SerializeField] private GameObject obj_F;
 
-    private void Awake() {
+   /* private void Awake() {
       this.InventoryUI = ReferenceUI.Instance.InventoryUI;
       if (ReferenceUI.Instance.Inventory != null) {
         this.InventoryUI.SetInventory( ReferenceUI.Instance.Inventory );
         this.InventoryUI.RefreshInventoryItems();
       }
     }
-
+   */
     private void Start()
     {
         health = startHealth;
@@ -100,15 +100,7 @@ public class PlayerController : MonoBehaviour
     you should be calling 'HandleSomethingWhatever' on some Exit method
     without this just adds confusion
     */
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        this.HandleItemCollisions( collision );
-        if ( collision.gameObject.CompareTag("Interactable") ) 
-        {
-          this.HandleInteractableTriggerEnter( collision );
-        }
-    }
-
+    /*
     private void HandleInteractableTriggerEnter(Collider2D collision) 
     {
       string flag = collision.GetComponent<Interactable>().Flag;
@@ -126,8 +118,9 @@ public class PlayerController : MonoBehaviour
             harvestInteractableRef = interactable;
       }
     }
+    
 
-    /*
+    
       @dev this method name is vague
       i.e. this handles only TriggerEnter collision ... not Collider collisions or Exit collisions
     */
@@ -135,7 +128,7 @@ public class PlayerController : MonoBehaviour
       if (collision.CompareTag("Item"))
         {
             ItemInRange = true;
-            UIreference = collision.GetComponent<ItemUI>();
+          //  UIreference = collision.GetComponent<ItemUI>();
             /*
             @dev dangerous to call by an array index
             i.e. if someone adds a new child to canvas this will break
@@ -180,15 +173,15 @@ public class PlayerController : MonoBehaviour
       print("harvesting...");
       this.animator.Play("harvestTree");
       // create item from interactableReference
-      Item item = new Item(harvestInteractableRef.spawnsItemType, 1);
-      print("  spawning item : " + item.ToString());
+     // Item item = new Item(harvestInteractableRef.spawnsItemType, 1);
+     // print("  spawning item : " + item.ToString());
 
       // create new game object
       GameObject itemSpawn = new GameObject("item-sticks");
-      ItemUI itemUI = itemSpawn.AddComponent<ItemUI>();
-      itemUI.SetItemType( item.GetItemType() );
+    //  ItemUI itemUI = itemSpawn.AddComponent<ItemUI>();
+     // itemUI.SetItemType( item.GetItemType() );
       SpriteRenderer spriteRenderer = itemSpawn.AddComponent<SpriteRenderer>();
-      spriteRenderer.sprite = item.GetSprite();
+    //  spriteRenderer.sprite = item.GetSprite();
       BoxCollider2D boxCollider2D = itemSpawn.AddComponent<BoxCollider2D>();
       boxCollider2D.isTrigger = true;
       // quick way to do it , Find is expensive
@@ -201,9 +194,9 @@ public class PlayerController : MonoBehaviour
 
     private void Pick ()
     {
-        Item item = new Item(UIreference.GetItemType(), 1);
-        this.inventoryUI.AddItem( item );
-        Destroy(UIreference.gameObject);
+      //  Item item = new Item(UIreference.GetItemType(), 1);
+       // this.inventoryUI.AddItem( item );
+       // Destroy(UIreference.gameObject);
     }
 
     public void SavePlayer()

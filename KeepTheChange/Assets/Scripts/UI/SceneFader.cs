@@ -54,7 +54,7 @@ public class SceneFader : MonoBehaviour
         if (colliderFadesTo.Equals("ShopInterior"))
         {
             // store reference to player inventory
-            ReferenceUI.Instance.Inventory = ReferenceUI.Instance.InventoryUI.GetComponent<InventoryUI>().GetInventory();
+        //    ReferenceUI.Instance.Inventory = ReferenceUI.Instance.InventoryUI.GetComponent<InventoryUI>().GetInventory();
         }
         FadeTo(colliderFadesTo);
     }

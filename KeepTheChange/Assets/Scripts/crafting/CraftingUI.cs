@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 public class CraftingUI : MonoBehaviour {
-
+/*
   [SerializeField] GameObject player;
   private InventoryUI playerInventoryUI;
 
@@ -49,5 +49,5 @@ public class CraftingUI : MonoBehaviour {
 
     return true;
   }
-
+*/
 }
