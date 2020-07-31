@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5097062322914598066}
+  - component: {fileID: 3695320259758118483}
   - component: {fileID: 5097062322914598069}
   - component: {fileID: 5097062322914598067}
   - component: {fileID: 4504414884313125605}
@@ -19,20 +19,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5097062322914598066
-Transform:
+--- !u!224 &3695320259758118483
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5097062322914598068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5124296, y: -3.3398304, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.5124296, y: -3.3398304}
+  m_SizeDelta: {x: 0.625, y: 0.6875}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &5097062322914598069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d75f031f730d4e4c915e403c1ca2cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 6a1f75d7cbf6de344890980140d54a4b, type: 2}
 --- !u!61 &4504414884313125605
 BoxCollider2D:
   m_ObjectHideFlags: 0
