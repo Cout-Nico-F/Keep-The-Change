@@ -11,5 +11,20 @@ public enum ItemType {
   Wood,
   R_FirePotion,
   Sticks,
-  DoubleShroom
+  DoubleShroom,
+  Pumpkin,
+  Turnip,
+  Cherry,
+  Eggplant,
+  Carrot,
+  AppleJuice,
+  CherryJuice,
+  BlueGem,
+  GreenGem,
+  PinkGem,
+  WoodenBowl,
+  ShroomSoup,
+  CarrotSoup,
+  LeafSoup,
+  SlimeBurger
 }
