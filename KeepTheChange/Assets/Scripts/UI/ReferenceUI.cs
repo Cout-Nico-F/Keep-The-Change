@@ -34,8 +34,11 @@ public class ReferenceUI : MonoBehaviour {
   public Dictionary<string, bool> DontDestroyObjects { get { return _dontDestroyObjects; } set { _dontDestroyObjects = value; } }
   [SerializeField]
   private CraftingUI _craftingUI;
+  [SerializeField]
   private CookingUI _cookingUI;
+
   public CraftingUI CraftingUI { get { return _craftingUI; } set { _craftingUI = value; } }
+  public CookingUI CookingUI { get { return _cookingUI; } set { _cookingUI = value; } }
 
   public void AddDontDestroyObject( string name ) {
     this._dontDestroyObjects.Add(name, true);
