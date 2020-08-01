@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private bool ItemInRange = false;
     private bool CanCraft = false;
     private bool CanHarvest = false;
+    private bool CanCook = false;
     private Interactable harvestInteractableRef = null;
     private ItemUI UIreference;
 
@@ -56,6 +57,10 @@ public class PlayerController : MonoBehaviour
         if(CanCraft && Input.GetKeyDown(KeyCode.E)) 
         {
           ReferenceUI.Instance.ToggleCraftingUI();
+        }
+        if(CanCook && Input.GetKeyDown(KeyCode.E)) 
+        {
+          ReferenceUI.Instance.ToggleCookingUI();
         }
         if(CanHarvest && Input.GetKeyDown(KeyCode.F)) 
         {
@@ -125,6 +130,10 @@ public class PlayerController : MonoBehaviour
             // store reference to the Interactable
             harvestInteractableRef = interactable;
       }
+      if(flag.Equals("CanCook")) {
+      CanCook = true;
+      canvas.transform.Find("PressKey_E").gameObject.SetActive(true);
+      }
     }
 
     /*
@@ -171,6 +180,11 @@ public class PlayerController : MonoBehaviour
             // hide letter F
             //Fix//canvas.transform.GetChild(4).gameObject.SetActive(false);
             canvas.transform.Find("PressKey_F").gameObject.SetActive(false);
+            }
+          if (flag.Equals("CanCook")) {
+            CanCook = false;
+            // hide letter E
+            canvas.transform.Find("PressKey_E").gameObject.SetActive(false);
             }
         }
          
