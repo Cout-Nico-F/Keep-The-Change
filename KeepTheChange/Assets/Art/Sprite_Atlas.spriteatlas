@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 10102c88b40fe104db9fa297fa954291, type: 3}
-    totalSpriteSurfaceArea: 8417641
+    totalSpriteSurfaceArea: 8461076
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -161,6 +161,7 @@ SpriteAtlas:
   - {fileID: -6103296980645117691, guid: d033d0e273311424697e1194c1d7b72b, type: 3}
   - {fileID: 261458179649585288, guid: d033d0e273311424697e1194c1d7b72b, type: 3}
   - {fileID: 21300000, guid: 4ff65603937b3fd4289adebb5d71d857, type: 3}
+  - {fileID: 21300000, guid: 28e95a032322b564ea257363f6dabc95, type: 3}
   - {fileID: 21300000, guid: c881a013f931fb44296e0c916db8d4cd, type: 3}
   - {fileID: 21300000, guid: 516b2a23e9a2a5547aab1d1bd90a2a6e, type: 3}
   - {fileID: 21300000, guid: a2cdfb23977c7bf4d9b6f8140635f2a0, type: 3}
@@ -380,6 +381,7 @@ SpriteAtlas:
   - {fileID: 4073431344032275586, guid: 643d9ce424de48345abc7f89ef9723bc, type: 3}
   - {fileID: -407723915229215481, guid: 643d9ce424de48345abc7f89ef9723bc, type: 3}
   - {fileID: -2315905200759821501, guid: 643d9ce424de48345abc7f89ef9723bc, type: 3}
+  - {fileID: 21300000, guid: c46802f4237837846a2ff24a2fc9c8a7, type: 3}
   - {fileID: 5391605441418248398, guid: 638b7205bca5e764aa0ee5e71b4f004c, type: 3}
   - {fileID: 5678752083344732364, guid: 638b7205bca5e764aa0ee5e71b4f004c, type: 3}
   - {fileID: 1830022751464056404, guid: 638b7205bca5e764aa0ee5e71b4f004c, type: 3}
@@ -498,6 +500,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c2b6d988b7fbab94889303fb08d760f2, type: 3}
   - {fileID: 21300000, guid: 83e5aed84a764de4bba6394661765197, type: 3}
   - {fileID: 21300000, guid: 6aca2119ec8cc2840929025a398c87c2, type: 3}
+  - {fileID: 21300000, guid: fecec8198a90a834ea0f29f574699a2e, type: 3}
   - {fileID: 21300000, guid: c6706129808375344a07a4430573f27f, type: 3}
   - {fileID: 6654724045234263336, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
   - {fileID: 1297909691390307169, guid: b24ae929e93b4ae48a09128dd574485f, type: 3}
@@ -591,6 +594,7 @@ SpriteAtlas:
   - {fileID: -444626046038809454, guid: 1e282d9b052c07a40a2b360b551b6e68, type: 3}
   - {fileID: 21300000, guid: 170ab4bbff1a7a14d9fbcb6bf066880c, type: 3}
   - {fileID: 21300000, guid: 680aa9bb84b7378468a8c1b7755c99c9, type: 3}
+  - {fileID: 21300000, guid: b6bb15fbac1785348a9d9b71ccf3fa9c, type: 3}
   - {fileID: 21300000, guid: 2d0b791cea302ca41b65af9c19d1eb86, type: 3}
   - {fileID: -9018742308532813356, guid: 8755b72c05b6f8642b8d6f3dc0768cce, type: 3}
   - {fileID: 3320588550714751036, guid: 8755b72c05b6f8642b8d6f3dc0768cce, type: 3}
@@ -671,6 +675,7 @@ SpriteAtlas:
   - {fileID: -4142398853556567561, guid: 1767d8addb36d35448f65adc64671cbf, type: 3}
   - {fileID: -1023025711914605143, guid: 1767d8addb36d35448f65adc64671cbf, type: 3}
   - {fileID: 2782645283406537335, guid: 1767d8addb36d35448f65adc64671cbf, type: 3}
+  - {fileID: 21300000, guid: 955cb9ad56d3db7489683374fb89787a, type: 3}
   - {fileID: 6211205595080947643, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
   - {fileID: -4949699458301832718, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
   - {fileID: -8708361061697588529, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
@@ -683,6 +688,7 @@ SpriteAtlas:
   - {fileID: 957594391959627986, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
   - {fileID: -4046370040062109021, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
   - {fileID: 4816594377359392806, guid: a0a7ceada423bff4a89f7317318d266f, type: 3}
+  - {fileID: 21300000, guid: e39d0dbdc8b5dc0428213ca3f84ee233, type: 3}
   - {fileID: -935744294126667069, guid: 644c5ebdb9299654db0fbcc8ce175dcf, type: 3}
   - {fileID: 6885102111810417790, guid: 644c5ebdb9299654db0fbcc8ce175dcf, type: 3}
   - {fileID: 6540658259621517317, guid: 644c5ebdb9299654db0fbcc8ce175dcf, type: 3}
@@ -874,6 +880,12 @@ SpriteAtlas:
   - {fileID: 7404754893803780291, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
   - {fileID: 8112166423768589531, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
   - {fileID: -7939098446825549753, guid: a7ad9b1fba4b1f640a7f8141df25d72c, type: 3}
+  - {fileID: -4773967258256406245, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
+  - {fileID: -5669606289867207682, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
+  - {fileID: -6645503429967489633, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
+  - {fileID: 6292675557347037369, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
+  - {fileID: 6914292453487979888, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
+  - {fileID: 3813537654878414978, guid: fba2555fb238fef43a260c842d1d6ef8, type: 3}
   - {fileID: 539519390147380946, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
   - {fileID: -8658220750014065679, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
   - {fileID: -9079339762851474286, guid: ee87547fb7f90b94c879680c3d1c202b, type: 3}
@@ -1002,6 +1014,7 @@ SpriteAtlas:
   - resumee-text_4
   - resumee-text_5
   - exit-button
+  - ui-bkg
   - White Pixel
   - chariconUI
   - bookshelfwithoutbooks
@@ -1221,6 +1234,7 @@ SpriteAtlas:
   - arbustos1_2
   - arbustos1_0
   - arbustos1_1
+  - plus
   - cowslime-iddle-Sheet_0
   - cowslime-iddle-Sheet_1
   - cowslime-iddle-Sheet_2
@@ -1339,6 +1353,7 @@ SpriteAtlas:
   - shopFINAL
   - inventory-square
   - dirtytileset-Sheet 2
+  - arrow
   - F-LETTER
   - PF-ataque_4
   - PF-ataque_5
@@ -1432,6 +1447,7 @@ SpriteAtlas:
   - arbusto2.0_2
   - cajaregistradoratiendasombra
   - arbolconsombra (2)
+  - equal
   - render.png_37
   - arbustos1v2.0_0
   - arbustos1v2.0_1
@@ -1512,6 +1528,7 @@ SpriteAtlas:
   - clifftile_9
   - clifftile_11
   - clifftile_10
+  - crafting
   - cliffwater_9
   - cliffwater_8
   - cliffwater_10
@@ -1524,6 +1541,7 @@ SpriteAtlas:
   - cliffwater_4
   - cliffwater_7
   - cliffwater_6
+  - stamina - mana bars
   - troncos_2
   - troncos_3
   - troncos_0
@@ -1715,6 +1733,12 @@ SpriteAtlas:
   - slimeiddletry-Sheet_0
   - slimeiddletry-Sheet_3
   - slimeiddletry-Sheet_2
+  - 16x16staff_2
+  - 16x16staff_3
+  - 16x16staff_0
+  - 16x16staff_1
+  - 16x16staff_4
+  - 16x16staff_5
   - slimevioletaiddle_2
   - slimevioletaiddle_0
   - slimevioletaiddle_1
