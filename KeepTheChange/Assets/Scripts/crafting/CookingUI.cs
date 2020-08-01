@@ -3,43 +3,18 @@ using System.Collections.Generic;
 
 public class CookingUI : CraftingUI
 {
-  private void Awake()
-  {
-    this.playerInventoryUI = ReferenceUI.Instance.InventoryUI;
-  }
-
-  private void Update()
+    private void Update()
   {
     if (Input.GetKeyDown(KeyCode.C))
     {
-      this.TryCraft();
+      this.TryCook();
     }
   }
 
-  private bool hasItems(ItemType itemA, ItemType itemB)
+  private bool TryCook()
   {
-
-    List<Item> items = this.playerInventoryUI.GetInventory().GetItems();
-    bool aFound = false;
-    bool bFound = false;
-    items.ForEach((Item item) => {
-      if (item.GetItemType() == itemA)
-      {
-        aFound = true;
-      }
-      if (item.GetItemType() == itemB)
-      {
-        bFound = true;
-      }
-    });
-    return (aFound && bFound);
-  }
-
-  private bool TryCraft()
-  {
-
-    ItemType demoTypeA = ItemType.PinkFruit;
-    ItemType demoTypeB = ItemType.RedShroom;
+    ItemType demoTypeA = ItemType.Carrot;
+    ItemType demoTypeB = ItemType.WoodenBowl;
 
     if (this.hasItems(demoTypeA, demoTypeB))
     {
@@ -47,7 +22,7 @@ public class CookingUI : CraftingUI
       this.playerInventoryUI.SubtractItem(new Item(demoTypeA, 1));
       this.playerInventoryUI.SubtractItem(new Item(demoTypeB, 1));
       // add crafted item to player inventory
-      this.playerInventoryUI.AddItem(new Item(ItemType.HealthPotion, 1));
+      this.playerInventoryUI.AddItem(new Item(ItemType.CarrotSoup, 1));
     }
     else
     {
