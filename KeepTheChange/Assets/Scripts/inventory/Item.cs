@@ -45,7 +45,7 @@ public class Item {
       case ItemType.CarrotSoup: return ItemAssets.Instance.CarrotSoup;
       case ItemType.LeafSoup: return ItemAssets.Instance.LeafSoup;
       case ItemType.SlimeBurger: return ItemAssets.Instance.SlimeBurger;
-        }
+    }
   }
 
   public override String ToString() {
