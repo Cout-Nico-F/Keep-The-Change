@@ -28,5 +28,6 @@ public class ItemAssets : MonoBehaviour {
   [SerializeField] Sprite r_FirePotion;
   public Sprite Sticks { get { return sticks; } private set { sticks = value;}}
   [SerializeField] Sprite sticks;
-
+  public Sprite DoubleShroom { get { return doubleShroom; } private set { doubleShroom = value; }}
+  [SerializeField] Sprite doubleShroom;
 }

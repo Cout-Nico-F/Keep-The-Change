@@ -10,5 +10,6 @@ public enum ItemType {
   PinkFruit,
   Wood,
   R_FirePotion,
-  Sticks
+  Sticks,
+  DoubleShroom
 }
