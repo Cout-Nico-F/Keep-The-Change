@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 10102c88b40fe104db9fa297fa954291, type: 3}
-    totalSpriteSurfaceArea: 8461076
+    totalSpriteSurfaceArea: 8496326
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -84,6 +84,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4e78bce127a4f18428fb62499ef179b8, type: 3}
   - {fileID: 21300000, guid: 06c29802330fc424bae9b3dae3713c4b, type: 3}
   - {fileID: 21300000, guid: b400a24291ec82a40b1a8e08b7d4e4ea, type: 3}
+  - {fileID: 21300000, guid: 6f699e5219f70d547ab9162f43b3f010, type: 3}
   - {fileID: 21300000, guid: 4ea29062fe694de40a4f0de9b404eab4, type: 3}
   - {fileID: 21300000, guid: 64d9ad628ca0098449910dacc12a3e13, type: 3}
   - {fileID: 21300000, guid: 1f9e008295f7f074c8e9fcd9f966a0a8, type: 3}
@@ -623,6 +624,26 @@ SpriteAtlas:
   - {fileID: -8479355535284377743, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
   - {fileID: 4004456793705433732, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
   - {fileID: 8022334212233496705, guid: cb5da88b462fdf54b92297f9e4693251, type: 3}
+  - {fileID: 3073671599688278490, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 2816848853701548348, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 7515575412125444222, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -3465019977387653079, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 2682264714073264128, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 8478646788846491937, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 7455676339966738014, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -6685233361392369474, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 7064670998811401574, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -4032443941005528805, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 8925147246305239830, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 7589977722945154136, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -877504309019588411, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -6546822938715907697, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 1407402283937249454, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -7974549110865485489, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -6313030179237335121, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -6471774969610759331, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: -2735078968688825653, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
+  - {fileID: 1074626986130191157, guid: 12b76b9b7db561945b30104e00387c77, type: 3}
   - {fileID: -6109470014436726471, guid: 1e282d9b052c07a40a2b360b551b6e68, type: 3}
   - {fileID: -6893537496586335966, guid: 1e282d9b052c07a40a2b360b551b6e68, type: 3}
   - {fileID: -444626046038809454, guid: 1e282d9b052c07a40a2b360b551b6e68, type: 3}
@@ -688,6 +709,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 43a2923d36851c446acd85a969367eeb, type: 3}
   - {fileID: 21300000, guid: f55eb33df57f8c748a78f9815eacce76, type: 3}
   - {fileID: 21300000, guid: f2298a5d901c85a4598f6506963e3fe0, type: 3}
+  - {fileID: 21300000, guid: c02c666da106830469c19fe7cde8addf, type: 3}
   - {fileID: 5774586320006297697, guid: 7c15567d70b623f4686aec795ee9a22e, type: 3}
   - {fileID: 5767900327239970736, guid: 7c15567d70b623f4686aec795ee9a22e, type: 3}
   - {fileID: 9172941467992114054, guid: 7c15567d70b623f4686aec795ee9a22e, type: 3}
@@ -1005,6 +1027,7 @@ SpriteAtlas:
   - woodinteriortileset-16x16
   - treetile
   - walk2chargrande
+  - cooking
   - cuadrotiendasombra
   - render.png_59
   - slimevioletajump
@@ -1544,6 +1567,26 @@ SpriteAtlas:
   - slimemovement1-Sheet_0
   - slimemovement1-Sheet_1
   - slimemovement1-Sheet_2
+  - newfood-1_8
+  - newfood-1_9
+  - newfood-1_4
+  - newfood-1_5
+  - newfood-1_6
+  - newfood-1_7
+  - newfood-1_0
+  - newfood-1_1
+  - newfood-1_2
+  - newfood-1_3
+  - newfood-1_17
+  - newfood-1_16
+  - newfood-1_15
+  - newfood-1_14
+  - newfood-1_13
+  - newfood-1_12
+  - newfood-1_11
+  - newfood-1_10
+  - newfood-1_19
+  - newfood-1_18
   - arbusto2.0_0
   - arbusto2.0_1
   - arbusto2.0_2
@@ -1609,6 +1652,7 @@ SpriteAtlas:
   - mageitems
   - render.png_45
   - render.png_9
+  - craftinglittle
   - BounceUp_4
   - BounceUp_6
   - BounceUp_1
