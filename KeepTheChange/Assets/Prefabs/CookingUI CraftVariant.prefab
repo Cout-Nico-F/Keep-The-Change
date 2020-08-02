@@ -31,7 +31,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 6962ad560e0aa4a4a98758c6aad4b678, type: 3}
+  m_Texture: {fileID: 2800000, guid: f20c9b2c6a2b91843b9b739f8bbafe90, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -51,18 +51,48 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -3168954748821871816, guid: e35fb3a205ea0db4cae18c9fcea73a16,
         type: 3}
+    - target: {fileID: 3724573752092482257, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -153.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724573752092482257, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3724573752146818493, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2970695137730791940, guid: 85860de6bd374de48b6045f0a89935ac,
         type: 3}
+    - target: {fileID: 3724573752146818494, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 144.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724573752146818494, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3724573752359558650, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7650bb65869cad64d9d312efeb752005,
         type: 3}
+    - target: {fileID: 3724573752359558651, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724573752359558651, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -57.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3724573752706235269, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_Enabled
@@ -211,12 +241,12 @@ PrefabInstance:
     - target: {fileID: 3724573752706235290, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_Name
-      value: CookingUI CraftVariant
+      value: CookingUI
       objectReference: {fileID: 0}
     - target: {fileID: 3724573752706235290, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3724573753702403013, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
@@ -262,6 +292,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553972957084176824, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553972957084176824, guid: 33ad35965acb6564eb5c8a12f6bd410d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 93
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030600841359554401, guid: 33ad35965acb6564eb5c8a12f6bd410d, type: 3}
