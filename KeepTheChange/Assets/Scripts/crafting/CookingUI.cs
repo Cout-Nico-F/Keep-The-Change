@@ -23,6 +23,7 @@ public class CookingUI : CraftingUI
       this.playerInventoryUI.SubtractItem(new Item(demoTypeB, 1));
       // add crafted item to player inventory
       this.playerInventoryUI.AddItem(new Item(ItemType.CarrotSoup, 1));
+      
     }
     else
     {

@@ -211,12 +211,12 @@ PrefabInstance:
     - target: {fileID: 3724573752706235290, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_Name
-      value: CookingUI
+      value: CookingUI CraftVariant
       objectReference: {fileID: 0}
     - target: {fileID: 3724573752706235290, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3724573753702403013, guid: 33ad35965acb6564eb5c8a12f6bd410d,
         type: 3}
