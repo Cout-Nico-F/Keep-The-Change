@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Inventory {
 
   private List<Item> itemList;
@@ -27,12 +28,18 @@ public class Inventory {
     }
   }
 
-  private void SubtractFromAmount( ItemType type ) {
+  private void SubtractFromAmount( ItemType type ) 
+  {
     int idx = 0;
-    foreach (Item i in this.itemList) {
-      if (i.GetItemType().Equals(type)) {
+    foreach (Item i in this.itemList) 
+    {
+      if (i.GetItemType().Equals(type)) 
+      {
         i.amount--;
-        if (i.amount == 0) {
+        if (i.amount <= 0) 
+        {
+          UnityEngine.Object.Destroy(i.slotRef);
+          Debug.Log("I destroyed gameobject");
           this.itemList.RemoveAt(idx);
           return;
         }

@@ -57,7 +57,7 @@ public class InventoryUI : MonoBehaviour {
 
     Image image = itemSlotTemplateRT.Find("Image").GetComponent<Image>();
     image.sprite = item.GetSprite();
-
+    item.slotRef = itemSlotTemplate;
     itemSlotTemplateRT.Find("Text").GetComponent<Text>().text = item.amount.ToString();
     
   }

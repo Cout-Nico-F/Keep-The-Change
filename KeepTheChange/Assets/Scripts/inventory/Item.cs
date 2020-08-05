@@ -5,6 +5,7 @@ public class Item {
 
   public ItemType itemType;
   public int amount;
+  public GameObject slotRef = null;
 
   public Item( ItemType itemType, int amount ) {
     this.itemType = itemType;
