@@ -38,7 +38,7 @@ public class Inventory {
         i.amount--;
         if (i.amount <= 0) 
         {
-          i.slotRef = null;
+          UnityEngine.Object.Destroy(i.slotRef);
           Debug.Log("I destroyed gameobject");
           this.itemList.RemoveAt(idx);
           return;
